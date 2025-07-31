@@ -1,0 +1,6488 @@
+{
+    "40UN": {
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "ADST": {
+        "VOLL": {
+            "code": "VOLL",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "AEMA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "AERA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "AERO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "INLTMP": {
+            "code": "INLTMP",
+            "name": "Inlet temperature",
+            "type": "Integer"
+        },
+        "OUTTMP": {
+            "code": "OUTTMP",
+            "name": "Outlet temperature",
+            "type": "Integer"
+        },
+        "FLTR": {
+            "code": "FLTR",
+            "name": "Filters",
+            "type": "Boolean"
+        }
+    },
+    "AHU": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRPUL": {
+            "code": "ELECPWRPUL",
+            "name": "Electrical power - pulsion",
+            "type": "Real"
+        },
+        "FLWPUL": {
+            "code": "FLWPUL",
+            "name": "Flow pulsion",
+            "type": "Real"
+        },
+        "HEACOILTHEPOW": {
+            "code": "HEACOILTHEPOW",
+            "name": "Heating Coil thermal power",
+            "type": "Real"
+        },
+        "COOCOILTHEPOW": {
+            "code": "COOCOILTHEPOW",
+            "name": "Cooling Coil thermal power",
+            "type": "Real"
+        },
+        "QTYMOT": {
+            "code": "QTYMOT",
+            "name": "QTY motors",
+            "type": "Integer"
+        },
+        "HEACOILTYPHECT": {
+            "code": "HEACOILTYPHECT",
+            "name": "Heat coil type",
+            "type": "String"
+        },
+        "COOCOILTYPCOCT": {
+            "code": "COOCOILTYPCOCT",
+            "name": "Cooling coil type",
+            "type": "String"
+        },
+        "ACECMOTACEM": {
+            "code": "ACECMOTACEM",
+            "name": "AC/EC motor",
+            "type": "String"
+        },
+        "AFTHEACOI": {
+            "code": "AFTHEACOI",
+            "name": "After heat coil",
+            "type": "Boolean"
+        },
+        "RECTYP": {
+            "code": "RECTYP",
+            "name": "Recycling type",
+            "type": "String"
+        },
+        "BYPASREG": {
+            "code": "BYPASREG",
+            "name": "By-pass register",
+            "type": "Boolean"
+        },
+        "FLTRCLACOATYP": {
+            "code": "FLTRCLACOATYP",
+            "name": "Filter Class Coarse type",
+            "type": "String"
+        },
+        "QTYFLTRCLACOA": {
+            "code": "QTYFLTRCLACOA",
+            "name": "QTY filter class coarse",
+            "type": "Integer"
+        },
+        "FLTRCLAFINTYP": {
+            "code": "FLTRCLAFINTYP",
+            "name": "Filter Class Fine type",
+            "type": "String"
+        },
+        "QTYFLTRCLAFIN": {
+            "code": "QTYFLTRCLAFIN",
+            "name": "QTY filter class fine",
+            "type": "Integer"
+        },
+        "FLTRCARTYP": {
+            "code": "FLTRCARTYP",
+            "name": "Filter Carbon type",
+            "type": "String"
+        },
+        "QTYFLTRCAR": {
+            "code": "QTYFLTRCAR",
+            "name": "QTY filter carbon",
+            "type": "Integer"
+        },
+        "RECFLTRTYP": {
+            "code": "RECFLTRTYP",
+            "name": "Recycling filter type",
+            "type": "String"
+        },
+        "QTYRECFIL": {
+            "code": "QTYRECFIL",
+            "name": "QTY recycling filters",
+            "type": "Integer"
+        },
+        "HUM": {
+            "code": "HUM",
+            "name": "Humidifier",
+            "type": "Boolean"
+        },
+        "CO2REG": {
+            "code": "CO2REG",
+            "name": "CO2-regulation",
+            "type": "Boolean"
+        },
+        "SMOEXTFUN": {
+            "code": "SMOEXTFUN",
+            "name": "Smoke extraction function",
+            "type": "Boolean"
+        },
+        "DRITYPDRT": {
+            "code": "DRITYPDRT",
+            "name": "Drive type",
+            "type": "String"
+        },
+        "ELECPWREXT": {
+            "code": "ELECPWREXT",
+            "name": "Electrical power - extraction",
+            "type": "Real"
+        },
+        "FLWEXT": {
+            "code": "FLWEXT",
+            "name": "Flow extraction",
+            "type": "Real"
+        }
+    },
+    "AICUEL": {
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "FLTR": {
+            "code": "FLTR",
+            "name": "Filters",
+            "type": "Boolean"
+        }
+    },
+    "AICUWA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "FLTR": {
+            "code": "FLTR",
+            "name": "Filters",
+            "type": "Boolean"
+        }
+    },
+    "AIEL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "ANCA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "ANPO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "WEIGHTCAPA": {
+            "code": "WEIGHTCAPA",
+            "name": "Weight capacity",
+            "type": "Real"
+        },
+        "PURPUGP": {
+            "code": "PURPUGP",
+            "name": "Purpose",
+            "type": "String"
+        }
+    },
+    "ASSMDE": {
+        "EQUWITAUTCLE": {
+            "code": "EQUWITAUTCLE",
+            "name": "Equipped with automatic cleaning system",
+            "type": "Boolean"
+        },
+        "EQUWITAUTTES": {
+            "code": "EQUWITAUTTES",
+            "name": "Equipped with automatic testing system",
+            "type": "Boolean"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DETLOC": {
+            "code": "DETLOC",
+            "name": "Detection location",
+            "type": "String"
+        },
+        "DETARE": {
+            "code": "DETARE",
+            "name": "Detection area",
+            "type": "Real"
+        }
+    },
+    "AUAIVE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "AUFISY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "AUFISYSP": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "LINWATTAN": {
+            "code": "LINWATTAN",
+            "name": "Linked water tank",
+            "type": "String"
+        }
+    },
+    "BACHDC": {
+        "ELECPWRKV": {
+            "code": "ELECPWRKV",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "BAEXKI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "BAFI": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "BAVAFU&OI": {
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "BLD": {
+        "BUINUM": {
+            "code": "BUINUM",
+            "name": "Building number",
+            "type": "String"
+        },
+        "CLACLASSIF": {
+            "code": "CLACLASSIF",
+            "name": "Classification",
+            "type": "String"
+        },
+        "OWN": {
+            "code": "OWN",
+            "name": "Owner",
+            "type": "String"
+        },
+        "TENA": {
+            "code": "TENA",
+            "name": "Tenant",
+            "type": "String"
+        },
+        "IDSOR": {
+            "code": "IDSOR",
+            "name": "id sort",
+            "type": "String"
+        },
+        "CRA": {
+            "code": "CRA",
+            "name": "CRAB",
+            "type": "String"
+        },
+        "FOO": {
+            "code": "FOO",
+            "name": "Footprint",
+            "type": "Real"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        },
+        "ZONZO": {
+            "code": "ZONZO",
+            "name": "Zone",
+            "type": "String"
+        },
+        "STASTBLT": {
+            "code": "STASTBLT",
+            "name": "Status",
+            "type": "String"
+        },
+        "FLOORDET": {
+            "code": "FLOORDET",
+            "name": "Floor detail",
+            "type": "String"
+        }
+    },
+    "BOBRBB": {
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "BOHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "THEPWR": {
+            "code": "THEPWR",
+            "name": "Thermal power",
+            "type": "Real"
+        },
+        "MAXFLORAN": {
+            "code": "MAXFLORAN",
+            "name": "Max. flow range",
+            "type": "Real"
+        },
+        "INLTMP": {
+            "code": "INLTMP",
+            "name": "Inlet temperature",
+            "type": "Integer"
+        },
+        "OUTTMP": {
+            "code": "OUTTMP",
+            "name": "Outlet temperature",
+            "type": "Integer"
+        },
+        "FUETYPFUT": {
+            "code": "FUETYPFUT",
+            "name": "Fuel type",
+            "type": "String"
+        }
+    },
+    "BOPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        }
+    },
+    "BRID": {
+        "CONDAT": {
+            "code": "CONDAT",
+            "name": "Construction date",
+            "type": "Time"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "USEHEI": {
+            "code": "USEHEI",
+            "name": "Useful height",
+            "type": "Integer"
+        },
+        "MAXLOA": {
+            "code": "MAXLOA",
+            "name": "Maximum load",
+            "type": "Real"
+        }
+    },
+    "BRTA": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "BUGOMA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "BUGOMO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXLOA": {
+            "code": "MAXLOA",
+            "name": "Maximum load",
+            "type": "Real"
+        },
+        "CAPAPER": {
+            "code": "CAPAPER",
+            "name": "Capacity",
+            "type": "Integer"
+        }
+    },
+    "BUMASYBMSC": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "QTYWOR": {
+            "code": "QTYWOR",
+            "name": "QTY workstations",
+            "type": "Integer"
+        }
+    },
+    "BUST": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "BUTACOAI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "LEADET": {
+            "code": "LEADET",
+            "name": "Leak detection",
+            "type": "Boolean"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        }
+    },
+    "BUTAHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "LEADET": {
+            "code": "LEADET",
+            "name": "Leak detection",
+            "type": "Boolean"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "BUTAPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "LEADET": {
+            "code": "LEADET",
+            "name": "Leak detection",
+            "type": "Boolean"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "BUVAFU&OI": {
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "CABA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRKVA": {
+            "code": "ELECPWRKVA",
+            "name": "Electrical power",
+            "type": "Real"
+        }
+    },
+    "CAHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "TEN": {
+            "code": "TEN",
+            "name": "Tension",
+            "type": "Real"
+        },
+        "CABLOCCALO": {
+            "code": "CABLOCCALO",
+            "name": "Cable localization",
+            "type": "String"
+        },
+        "NUMOFPARCAB": {
+            "code": "NUMOFPARCAB",
+            "name": "Number of parallel cables",
+            "type": "Integer"
+        },
+        "CUAICUAI": {
+            "code": "CUAICUAI",
+            "name": "CU/AI",
+            "type": "String"
+        },
+        "SEC": {
+            "code": "SEC",
+            "name": "Section",
+            "type": "String"
+        }
+    },
+    "CAIN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "CALA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "RUNMET": {
+            "code": "RUNMET",
+            "name": "Running meter",
+            "type": "Real"
+        },
+        "ACCAC": {
+            "code": "ACCAC",
+            "name": "Accessibility",
+            "type": "String"
+        }
+    },
+    "CATR": {
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "WDTHCM": {
+            "code": "WDTHCM",
+            "name": "Width",
+            "type": "Integer"
+        }
+    },
+    "CBS": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "CEFI": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "SUR": {
+            "code": "SUR",
+            "name": "Surface",
+            "type": "Integer"
+        },
+        "MEAOF1ELE": {
+            "code": "MEAOF1ELE",
+            "name": "Measurement of 1 element",
+            "type": "String"
+        },
+        "COL": {
+            "code": "COL",
+            "name": "Colour",
+            "type": "String"
+        }
+    },
+    "CHHEPU": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "GWP": {
+            "code": "GWP",
+            "name": "GWP",
+            "type": "String"
+        },
+        "REFLOA": {
+            "code": "REFLOA",
+            "name": "Refrigerant load",
+            "type": "Real"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "COP": {
+            "code": "COP",
+            "name": "COP",
+            "type": "String"
+        },
+        "REF": {
+            "code": "REF",
+            "name": "Refrigerant",
+            "type": "String"
+        },
+        "QTYCOM": {
+            "code": "QTYCOM",
+            "name": "QTY compressors",
+            "type": "Integer"
+        }
+    },
+    "CHIM": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "CHSE": {
+        "RENDAT": {
+            "code": "RENDAT",
+            "name": "Renovation date",
+            "type": "Time"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "CHASHACHSH": {
+            "code": "CHASHACHSH",
+            "name": "Chamber shape",
+            "type": "String"
+        },
+        "LEVMANCOVMTA": {
+            "code": "LEVMANCOVMTA",
+            "name": "Level manhole cover",
+            "type": "Integer"
+        },
+        "CHADPTH": {
+            "code": "CHADPTH",
+            "name": "Chamber depth",
+            "type": "Integer"
+        },
+        "CHAWID": {
+            "code": "CHAWID",
+            "name": "Chamber width",
+            "type": "Integer"
+        },
+        "CHALEN": {
+            "code": "CHALEN",
+            "name": "Chamber length",
+            "type": "Integer"
+        },
+        "CHADIA": {
+            "code": "CHADIA",
+            "name": "Chamber diameter",
+            "type": "Integer"
+        },
+        "NUMOFCONEA": {
+            "code": "NUMOFCONEA",
+            "name": "Number of connections",
+            "type": "Integer"
+        },
+        "REN": {
+            "code": "REN",
+            "name": "Renovated",
+            "type": "Boolean"
+        }
+    },
+    "CHTESH": {
+        "RENDAT": {
+            "code": "RENDAT",
+            "name": "Renovation date",
+            "type": "Time"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "CHASHACHSH": {
+            "code": "CHASHACHSH",
+            "name": "Chamber shape",
+            "type": "String"
+        },
+        "LEVMANCOVM": {
+            "code": "LEVMANCOVM",
+            "name": "Level manhole cover",
+            "type": "Integer"
+        },
+        "WDTHM": {
+            "code": "WDTHM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "HGHTM": {
+            "code": "HGHTM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "DIAM": {
+            "code": "DIAM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "DEPM": {
+            "code": "DEPM",
+            "name": "Depth",
+            "type": "Integer"
+        },
+        "NUMOFCONM": {
+            "code": "NUMOFCONM",
+            "name": "Number of connections",
+            "type": "Integer"
+        },
+        "ASBPRE": {
+            "code": "ASBPRE",
+            "name": "Asbestos present",
+            "type": "Boolean"
+        },
+        "REN": {
+            "code": "REN",
+            "name": "Renovated",
+            "type": "Boolean"
+        }
+    },
+    "CLBE": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "FAN": {
+            "code": "FAN",
+            "name": "Fan",
+            "type": "Boolean"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        }
+    },
+    "CLCEFLWA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        }
+    },
+    "CLF1": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "CLRE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "COAIIN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "MAXPR": {
+            "code": "MAXPR",
+            "name": "Max. pressure",
+            "type": "Real"
+        },
+        "PRESET": {
+            "code": "PRESET",
+            "name": "Pressure setting",
+            "type": "Integer"
+        }
+    },
+    "CODE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DEPTYPDETY": {
+            "code": "DEPTYPDETY",
+            "name": "Departure type",
+            "type": "String"
+        },
+        "SPRTYPSPTY": {
+            "code": "SPRTYPSPTY",
+            "name": "Sprinkler type",
+            "type": "String"
+        },
+        "SPRCLASPCL": {
+            "code": "SPRCLASPCL",
+            "name": "Sprinkler class",
+            "type": "String"
+        },
+        "APPEXTREG": {
+            "code": "APPEXTREG",
+            "name": "Applied extinguishing regulation",
+            "type": "String"
+        },
+        "LINALASYS": {
+            "code": "LINALASYS",
+            "name": "Linked alarm system",
+            "type": "String"
+        }
+    },
+    "COEV": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "QTYFAN": {
+            "code": "QTYFAN",
+            "name": "QTY fans",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        },
+        "OPECLOSYSOPCS": {
+            "code": "OPECLOSYSOPCS",
+            "name": "Open/closed system",
+            "type": "String"
+        }
+    },
+    "COGE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        }
+    },
+    "COHOEXSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PROLOC": {
+            "code": "PROLOC",
+            "name": "Protected location",
+            "type": "String"
+        },
+        "STOLOC": {
+            "code": "STOLOC",
+            "name": "Storage location",
+            "type": "String"
+        },
+        "FOAANDORGAS": {
+            "code": "FOAANDORGAS",
+            "name": "Foam and/or gas type",
+            "type": "String"
+        },
+        "GASBOTCAP": {
+            "code": "GASBOTCAP",
+            "name": "Gas bottle capacity",
+            "type": "Integer"
+        },
+        "ALASYSMODTYP": {
+            "code": "ALASYSMODTYP",
+            "name": "Alarm system model/type",
+            "type": "String"
+        },
+        "APPEXTREG": {
+            "code": "APPEXTREG",
+            "name": "Applied extinguishing regulation",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        }
+    },
+    "COHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "QTYCIR": {
+            "code": "QTYCIR",
+            "name": "QTY circuits",
+            "type": "Integer"
+        },
+        "QTYCIRPUM": {
+            "code": "QTYCIRPUM",
+            "name": "QTY circulator pumps",
+            "type": "Integer"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "COLLFI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "EQUWITBYP": {
+            "code": "EQUWITBYP",
+            "name": "Equipped with bypass",
+            "type": "Boolean"
+        },
+        "EQUWITNONRET": {
+            "code": "EQUWITNONRET",
+            "name": "Equipped with non-return valve",
+            "type": "Boolean"
+        }
+    },
+    "COMPFI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "TANCAPA": {
+            "code": "TANCAPA",
+            "name": "Tank capacity",
+            "type": "Integer"
+        }
+    },
+    "CONVE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "COPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "QTYCIR": {
+            "code": "QTYCIR",
+            "name": "QTY circuits",
+            "type": "Integer"
+        },
+        "QTYCIRPUM": {
+            "code": "QTYCIRPUM",
+            "name": "QTY circulator pumps",
+            "type": "Integer"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "COTE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "COVAHV": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "PNPN": {
+            "code": "PNPN",
+            "name": "PN",
+            "type": "String"
+        },
+        "CONTYPCOT": {
+            "code": "CONTYPCOT",
+            "name": "Control type",
+            "type": "String"
+        },
+        "KVVAL": {
+            "code": "KVVAL",
+            "name": "kv value",
+            "type": "Real"
+        },
+        "NUMOFWAYNUOW": {
+            "code": "NUMOFWAYNUOW",
+            "name": "Number of ways",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        },
+        "SETVALSTAVAL": {
+            "code": "SETVALSTAVAL",
+            "name": "Set value static valve",
+            "type": "Real"
+        }
+    },
+    "COVAPL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "CONTYPCOT": {
+            "code": "CONTYPCOT",
+            "name": "Control type",
+            "type": "String"
+        },
+        "KVVAL": {
+            "code": "KVVAL",
+            "name": "kv value",
+            "type": "Real"
+        },
+        "NUMOFWAYNUOW": {
+            "code": "NUMOFWAYNUOW",
+            "name": "Number of ways",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        },
+        "SETVALSTAVAL": {
+            "code": "SETVALSTAVAL",
+            "name": "Set value static valve",
+            "type": "Real"
+        }
+    },
+    "DBVA": {
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "DETR": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "DGUN": {
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "DIEXDXDIBO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "DIEXDXINUN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "REMCON": {
+            "code": "REMCON",
+            "name": "Remote control",
+            "type": "Boolean"
+        }
+    },
+    "DIEXDXOUUN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "REF": {
+            "code": "REF",
+            "name": "Refrigerant",
+            "type": "String"
+        },
+        "REFLOA": {
+            "code": "REFLOA",
+            "name": "Refrigerant load",
+            "type": "Real"
+        },
+        "GWP": {
+            "code": "GWP",
+            "name": "GWP",
+            "type": "String"
+        },
+        "COP": {
+            "code": "COP",
+            "name": "COP",
+            "type": "String"
+        }
+    },
+    "DIFUST": {
+        "VOLL": {
+            "code": "VOLL",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "DIPUAI": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "DOCK": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXLOA": {
+            "code": "MAXLOA",
+            "name": "Maximum load",
+            "type": "Real"
+        }
+    },
+    "DOEXWAOP": {
+        "DOOTYPCODDOTYCO": {
+            "code": "DOOTYPCODDOTYCO",
+            "name": "Door Type Code",
+            "type": "String"
+        },
+        "DOOTYPTEXDOTYTE": {
+            "code": "DOOTYPTEXDOTYTE",
+            "name": "Door Type Text",
+            "type": "String"
+        },
+        "DOOMAU": {
+            "code": "DOOMAU",
+            "name": "Door mauclair",
+            "type": "String"
+        },
+        "HINQTY": {
+            "code": "HINQTY",
+            "name": "Hinge QTY",
+            "type": "Integer"
+        },
+        "DOOPANWID": {
+            "code": "DOOPANWID",
+            "name": "Door panel width",
+            "type": "Integer"
+        },
+        "WALOPEWID": {
+            "code": "WALOPEWID",
+            "name": "Wall openning width",
+            "type": "Integer"
+        },
+        "DOOPANHEI": {
+            "code": "DOOPANHEI",
+            "name": "Door panel height",
+            "type": "Integer"
+        },
+        "WALOPEHEI": {
+            "code": "WALOPEHEI",
+            "name": "Wall openning height",
+            "type": "Integer"
+        },
+        "DOOPANTHI": {
+            "code": "DOOPANTHI",
+            "name": "Door panel thickness",
+            "type": "Integer"
+        },
+        "WALOPETHI": {
+            "code": "WALOPETHI",
+            "name": "Wall openning thickness",
+            "type": "Integer"
+        },
+        "DOOPANMAT": {
+            "code": "DOOPANMAT",
+            "name": "Door panel material",
+            "type": "String"
+        },
+        "DOOFRAMAT": {
+            "code": "DOOFRAMAT",
+            "name": "Door frame material",
+            "type": "String"
+        },
+        "BENATGNR": {
+            "code": "BENATGNR",
+            "name": "Benor/ATG nr.",
+            "type": "String"
+        },
+        "INSANDCOMFIL": {
+            "code": "INSANDCOMFIL",
+            "name": "Installation and compliance file",
+            "type": "String"
+        },
+        "DOOFIRRESDOFIRE": {
+            "code": "DOOFIRRESDOFIRE",
+            "name": "Door fire resistance",
+            "type": "String"
+        },
+        "KEYCYL": {
+            "code": "KEYCYL",
+            "name": "Key cylinder",
+            "type": "String"
+        },
+        "SECLEVSELE": {
+            "code": "SECLEVSELE",
+            "name": "security level",
+            "type": "String"
+        },
+        "EVADOO": {
+            "code": "EVADOO",
+            "name": "Evacuation door",
+            "type": "String"
+        },
+        "DOOPUM": {
+            "code": "DOOPUM",
+            "name": "Door pump",
+            "type": "String"
+        },
+        "SECLIG": {
+            "code": "SECLIG",
+            "name": "Security lighting",
+            "type": "String"
+        },
+        "EVASIG": {
+            "code": "EVASIG",
+            "name": "Evacuation signage",
+            "type": "String"
+        },
+        "FLOORSPR": {
+            "code": "FLOORSPR",
+            "name": "Floor spring",
+            "type": "String"
+        },
+        "DOOCLO": {
+            "code": "DOOCLO",
+            "name": "Door closer",
+            "type": "String"
+        },
+        "DOOPUSBAR": {
+            "code": "DOOPUSBAR",
+            "name": "Door push bar",
+            "type": "String"
+        },
+        "DOUDOOPUSBAR": {
+            "code": "DOUDOOPUSBAR",
+            "name": "Double door push bar",
+            "type": "String"
+        },
+        "DOOMAG": {
+            "code": "DOOMAG",
+            "name": "Door magnet",
+            "type": "String"
+        },
+        "YELPUSBUT": {
+            "code": "YELPUSBUT",
+            "name": "Yellow push button",
+            "type": "String"
+        }
+    },
+    "DOINWAOP": {
+        "DOOTYPCODDOTYCO": {
+            "code": "DOOTYPCODDOTYCO",
+            "name": "Door Type Code",
+            "type": "String"
+        },
+        "DOOTYPTEXDOTYTE": {
+            "code": "DOOTYPTEXDOTYTE",
+            "name": "Door Type Text",
+            "type": "String"
+        },
+        "DOOMAU": {
+            "code": "DOOMAU",
+            "name": "Door mauclair",
+            "type": "String"
+        },
+        "HINQTY": {
+            "code": "HINQTY",
+            "name": "Hinge QTY",
+            "type": "Integer"
+        },
+        "DOOPANWID": {
+            "code": "DOOPANWID",
+            "name": "Door panel width",
+            "type": "Integer"
+        },
+        "WALOPEWID": {
+            "code": "WALOPEWID",
+            "name": "Wall openning width",
+            "type": "Integer"
+        },
+        "DOOPANHEI": {
+            "code": "DOOPANHEI",
+            "name": "Door panel height",
+            "type": "Integer"
+        },
+        "WALOPEHEI": {
+            "code": "WALOPEHEI",
+            "name": "Wall openning height",
+            "type": "Integer"
+        },
+        "DOOPANTHI": {
+            "code": "DOOPANTHI",
+            "name": "Door panel thickness",
+            "type": "Integer"
+        },
+        "WALOPETHI": {
+            "code": "WALOPETHI",
+            "name": "Wall openning thickness",
+            "type": "Integer"
+        },
+        "DOOPANMAT": {
+            "code": "DOOPANMAT",
+            "name": "Door panel material",
+            "type": "String"
+        },
+        "DOOFRAMAT": {
+            "code": "DOOFRAMAT",
+            "name": "Door frame material",
+            "type": "String"
+        },
+        "BENATGNR": {
+            "code": "BENATGNR",
+            "name": "Benor/ATG nr.",
+            "type": "String"
+        },
+        "INSANDCOMFIL": {
+            "code": "INSANDCOMFIL",
+            "name": "Installation and compliance file",
+            "type": "String"
+        },
+        "DOOFIRRESDOFIRE": {
+            "code": "DOOFIRRESDOFIRE",
+            "name": "Door fire resistance",
+            "type": "String"
+        },
+        "KEYCYL": {
+            "code": "KEYCYL",
+            "name": "Key cylinder",
+            "type": "String"
+        },
+        "SECLEVSELE": {
+            "code": "SECLEVSELE",
+            "name": "security level",
+            "type": "String"
+        },
+        "EVADOO": {
+            "code": "EVADOO",
+            "name": "Evacuation door",
+            "type": "String"
+        },
+        "DOOPUM": {
+            "code": "DOOPUM",
+            "name": "Door pump",
+            "type": "String"
+        },
+        "SECLIG": {
+            "code": "SECLIG",
+            "name": "Security lighting",
+            "type": "String"
+        },
+        "EVASIG": {
+            "code": "EVASIG",
+            "name": "Evacuation signage",
+            "type": "String"
+        },
+        "FLOORSPR": {
+            "code": "FLOORSPR",
+            "name": "Floor spring",
+            "type": "String"
+        },
+        "DOOCLO": {
+            "code": "DOOCLO",
+            "name": "Door closer",
+            "type": "String"
+        },
+        "DOOPUSBAR": {
+            "code": "DOOPUSBAR",
+            "name": "Door push bar",
+            "type": "String"
+        },
+        "DOUDOOPUSBAR": {
+            "code": "DOUDOOPUSBAR",
+            "name": "Double door push bar",
+            "type": "String"
+        },
+        "DOOMAG": {
+            "code": "DOOMAG",
+            "name": "Door magnet",
+            "type": "String"
+        },
+        "YELPUSBUT": {
+            "code": "YELPUSBUT",
+            "name": "Yellow push button",
+            "type": "String"
+        }
+    },
+    "DOUN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "DRFO": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "DRPI": {
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "DIAM": {
+            "code": "DIAM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "DISPOI": {
+            "code": "DISPOI",
+            "name": "Discharge point",
+            "type": "String"
+        }
+    },
+    "DYEVSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "DYSI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "EAC": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "SOFVER": {
+            "code": "SOFVER",
+            "name": "Software version",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "ECON": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "EDS": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "ELCOPAFIDE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "BACPWRBAPO": {
+            "code": "BACPWRBAPO",
+            "name": "Backup power",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        }
+    },
+    "ELCOPAFIPR": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "BACPWRBAPO": {
+            "code": "BACPWRBAPO",
+            "name": "Backup power",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        }
+    },
+    "ELDIBOFIDE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DISLEVDILE": {
+            "code": "DISLEVDILE",
+            "name": "Distribution level",
+            "type": "String"
+        },
+        "BACPWRBAPO": {
+            "code": "BACPWRBAPO",
+            "name": "Backup power",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        }
+    },
+    "ELEV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PURPUGP": {
+            "code": "PURPUGP",
+            "name": "Purpose",
+            "type": "String"
+        },
+        "POW": {
+            "code": "POW",
+            "name": "Power",
+            "type": "Real"
+        },
+        "MACROO": {
+            "code": "MACROO",
+            "name": "Machine room",
+            "type": "String"
+        },
+        "QTYEVALEV": {
+            "code": "QTYEVALEV",
+            "name": "QTY evacuation levels",
+            "type": "Integer"
+        },
+        "EVAFLONR": {
+            "code": "EVAFLONR",
+            "name": "Evacuation floor nr",
+            "type": "String"
+        },
+        "FIRKEY": {
+            "code": "FIRKEY",
+            "name": "Firefighter key",
+            "type": "String"
+        },
+        "MAXLOA": {
+            "code": "MAXLOA",
+            "name": "Maximum load",
+            "type": "Real"
+        },
+        "CAPAPER": {
+            "code": "CAPAPER",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "USEOPEDOO": {
+            "code": "USEOPEDOO",
+            "name": "Usefull opening door",
+            "type": "Real"
+        },
+        "WDTHELECAR": {
+            "code": "WDTHELECAR",
+            "name": "Width elevator car",
+            "type": "Real"
+        },
+        "HGHTELECAR": {
+            "code": "HGHTELECAR",
+            "name": "Height elevator car",
+            "type": "Real"
+        }
+    },
+    "ELPAAPHA": {
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        },
+        "INSOUTESBIO": {
+            "code": "INSOUTESBIO",
+            "name": "Inside/Outside",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "ELPAEL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "INSOUTESBIO": {
+            "code": "INSOUTESBIO",
+            "name": "Inside/Outside",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        }
+    },
+    "ELPAHV": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        },
+        "INSOUTESBIO": {
+            "code": "INSOUTESBIO",
+            "name": "Inside/Outside",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "ELPAME": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        },
+        "INSOUTESBIO": {
+            "code": "INSOUTESBIO",
+            "name": "Inside/Outside",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "ELPAPL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        },
+        "INSOUTESBIO": {
+            "code": "INSOUTESBIO",
+            "name": "Inside/Outside",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "STEASS": {
+            "code": "STEASS",
+            "name": "Steered asset",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "ELPOSUFIDE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "POWSYSASS": {
+            "code": "POWSYSASS",
+            "name": "Powered system/asset",
+            "type": "String"
+        },
+        "BACPWRBAPO": {
+            "code": "BACPWRBAPO",
+            "name": "Backup power",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        }
+    },
+    "ELPOSUFIPR": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "POWSYSASS": {
+            "code": "POWSYSASS",
+            "name": "Powered system/asset",
+            "type": "String"
+        },
+        "BACPWRBAPO": {
+            "code": "BACPWRBAPO",
+            "name": "Backup power",
+            "type": "String"
+        },
+        "ICC": {
+            "code": "ICC",
+            "name": "Icc",
+            "type": "Real"
+        }
+    },
+    "ELSTBO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "SCATYPTECSCTYTE": {
+            "code": "SCATYPTECSCTYTE",
+            "name": "Scada Type / technic",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "INSOUTESBIO": {
+            "code": "INSOUTESBIO",
+            "name": "Inside/Outside",
+            "type": "String"
+        },
+        "DRIASSGRO": {
+            "code": "DRIASSGRO",
+            "name": "Driven asset group",
+            "type": "String"
+        }
+    },
+    "EMPOGE": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRKVA": {
+            "code": "ELECPWRKVA",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "FUETYPFUT": {
+            "code": "FUETYPFUT",
+            "name": "Fuel type",
+            "type": "String"
+        },
+        "TANCAPA": {
+            "code": "TANCAPA",
+            "name": "Tank capacity",
+            "type": "Integer"
+        },
+        "AUTONOMY": {
+            "code": "AUTONOMY",
+            "name": "Autonomy",
+            "type": "Real"
+        },
+        "TANTYPTATSD": {
+            "code": "TANTYPTATSD",
+            "name": "Tank type",
+            "type": "String"
+        },
+        "TANMATTAM": {
+            "code": "TANMATTAM",
+            "name": "Tank material",
+            "type": "String"
+        }
+    },
+    "EMPOGEFUTA": {
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "FUETYPFUT": {
+            "code": "FUETYPFUT",
+            "name": "Fuel type",
+            "type": "String"
+        },
+        "TANTYPTATSD": {
+            "code": "TANTYPTATSD",
+            "name": "Tank type",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "MATMASTPL": {
+            "code": "MATMASTPL",
+            "name": "Material",
+            "type": "String"
+        }
+    },
+    "EMSH": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "ENCO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "ENOFLITEVA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "ESCA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "POW": {
+            "code": "POW",
+            "name": "Power",
+            "type": "Real"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "NUMOFSTE": {
+            "code": "NUMOFSTE",
+            "name": "Number of steps",
+            "type": "Integer"
+        },
+        "USEOPE": {
+            "code": "USEOPE",
+            "name": "Usefull opening",
+            "type": "Real"
+        }
+    },
+    "ETD": {
+        "MODTYPMOTY": {
+            "code": "MODTYPMOTY",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "EVCHPO": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "COMCOBUS": {
+            "code": "COMCOBUS",
+            "name": "Communication",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        }
+    },
+    "EXCH": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "INLTMPSEC": {
+            "code": "INLTMPSEC",
+            "name": "Inlet temperature - Secundair",
+            "type": "Integer"
+        },
+        "INLTMPPRI": {
+            "code": "INLTMPPRI",
+            "name": "Inlet temperature - Primair",
+            "type": "Integer"
+        },
+        "OUTTMPPRI": {
+            "code": "OUTTMPPRI",
+            "name": "Outlet temperature - Primair",
+            "type": "Integer"
+        },
+        "OUTTMPSEC": {
+            "code": "OUTTMPSEC",
+            "name": "Outlet temperature - Secundair",
+            "type": "Integer"
+        },
+        "TECTESP": {
+            "code": "TECTESP",
+            "name": "Technology",
+            "type": "String"
+        }
+    },
+    "EXCO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "EXDICA": {
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "HGHTCM": {
+            "code": "HGHTCM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "DEPCM": {
+            "code": "DEPCM",
+            "name": "Depth",
+            "type": "Integer"
+        },
+        "WDTHCM": {
+            "code": "WDTHCM",
+            "name": "Width",
+            "type": "Integer"
+        }
+    },
+    "EXSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PREPR": {
+            "code": "PREPR",
+            "name": "Precharge pressure",
+            "type": "Real"
+        },
+        "MAXPR": {
+            "code": "MAXPR",
+            "name": "Max. pressure",
+            "type": "Real"
+        },
+        "THEPWR": {
+            "code": "THEPWR",
+            "name": "Thermal power",
+            "type": "Real"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "QTYCIRPUM": {
+            "code": "QTYCIRPUM",
+            "name": "QTY circulator pumps",
+            "type": "Integer"
+        },
+        "LUC": {
+            "code": "LUC",
+            "name": "Luchtcompressor",
+            "type": "Boolean"
+        }
+    },
+    "EXSYPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PREPR": {
+            "code": "PREPR",
+            "name": "Precharge pressure",
+            "type": "Real"
+        },
+        "MAXPR": {
+            "code": "MAXPR",
+            "name": "Max. pressure",
+            "type": "Real"
+        },
+        "THEPWR": {
+            "code": "THEPWR",
+            "name": "Thermal power",
+            "type": "Real"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "QTYCIRPUM": {
+            "code": "QTYCIRPUM",
+            "name": "QTY circulator pumps",
+            "type": "Integer"
+        },
+        "LUC": {
+            "code": "LUC",
+            "name": "Luchtcompressor",
+            "type": "Boolean"
+        }
+    },
+    "FACO": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "SUR": {
+            "code": "SUR",
+            "name": "Surface",
+            "type": "Integer"
+        },
+        "TYPOFINSTYOFIN": {
+            "code": "TYPOFINSTYOFIN",
+            "name": "Type of insulation",
+            "type": "String"
+        },
+        "THIOFISO": {
+            "code": "THIOFISO",
+            "name": "Thickness of isolation",
+            "type": "Integer"
+        },
+        "VAPSCRPRE": {
+            "code": "VAPSCRPRE",
+            "name": "Vapour screen present?",
+            "type": "Boolean"
+        }
+    },
+    "FACOUN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "FLTR": {
+            "code": "FLTR",
+            "name": "Filters",
+            "type": "Boolean"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        }
+    },
+    "FAN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "SMOEXTFUN": {
+            "code": "SMOEXTFUN",
+            "name": "Smoke extraction function",
+            "type": "Boolean"
+        },
+        "OVEEVAFUN": {
+            "code": "OVEEVAFUN",
+            "name": "Overpressure evacuation function",
+            "type": "Boolean"
+        },
+        "GARVENFUN": {
+            "code": "GARVENFUN",
+            "name": "Garage ventilation function",
+            "type": "Boolean"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        }
+    },
+    "FIALRE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "FIALSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "APPDETREG": {
+            "code": "APPDETREG",
+            "name": "Applied detection regulation",
+            "type": "String"
+        }
+    },
+    "FIDASMDA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "LGTHMM": {
+            "code": "LGTHMM",
+            "name": "Length",
+            "type": "Integer"
+        },
+        "DIAMM": {
+            "code": "DIAMM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "BRAACT": {
+            "code": "BRAACT",
+            "name": "Brand actuator",
+            "type": "String"
+        },
+        "MODTYPACT": {
+            "code": "MODTYPACT",
+            "name": "Model/Type Actuator",
+            "type": "String"
+        },
+        "FIRRESFIR": {
+            "code": "FIRRESFIR",
+            "name": "Fire resistance",
+            "type": "String"
+        }
+    },
+    "FIDO": {
+        "DOOTYPCODDOTYCO": {
+            "code": "DOOTYPCODDOTYCO",
+            "name": "Door Type Code",
+            "type": "String"
+        },
+        "DOOTYPTEXDOTYTE": {
+            "code": "DOOTYPTEXDOTYTE",
+            "name": "Door Type Text",
+            "type": "String"
+        },
+        "DOOMAU": {
+            "code": "DOOMAU",
+            "name": "Door mauclair",
+            "type": "String"
+        },
+        "HINQTY": {
+            "code": "HINQTY",
+            "name": "Hinge QTY",
+            "type": "Integer"
+        },
+        "DOOPANWID": {
+            "code": "DOOPANWID",
+            "name": "Door panel width",
+            "type": "Integer"
+        },
+        "WALOPEWID": {
+            "code": "WALOPEWID",
+            "name": "Wall openning width",
+            "type": "Integer"
+        },
+        "DOOPANHEI": {
+            "code": "DOOPANHEI",
+            "name": "Door panel height",
+            "type": "Integer"
+        },
+        "WALOPEHEI": {
+            "code": "WALOPEHEI",
+            "name": "Wall openning height",
+            "type": "Integer"
+        },
+        "DOOPANTHI": {
+            "code": "DOOPANTHI",
+            "name": "Door panel thickness",
+            "type": "Integer"
+        },
+        "WALOPETHI": {
+            "code": "WALOPETHI",
+            "name": "Wall openning thickness",
+            "type": "Integer"
+        },
+        "DOOPANMAT": {
+            "code": "DOOPANMAT",
+            "name": "Door panel material",
+            "type": "String"
+        },
+        "DOOFRAMAT": {
+            "code": "DOOFRAMAT",
+            "name": "Door frame material",
+            "type": "String"
+        },
+        "BENATGNR": {
+            "code": "BENATGNR",
+            "name": "Benor/ATG nr.",
+            "type": "String"
+        },
+        "INSANDCOMFIL": {
+            "code": "INSANDCOMFIL",
+            "name": "Installation and compliance file",
+            "type": "String"
+        },
+        "DOOFIRRESDOFIRE": {
+            "code": "DOOFIRRESDOFIRE",
+            "name": "Door fire resistance",
+            "type": "String"
+        },
+        "KEYCYL": {
+            "code": "KEYCYL",
+            "name": "Key cylinder",
+            "type": "String"
+        },
+        "SECLEVSELE": {
+            "code": "SECLEVSELE",
+            "name": "security level",
+            "type": "String"
+        },
+        "EVADOO": {
+            "code": "EVADOO",
+            "name": "Evacuation door",
+            "type": "String"
+        },
+        "DOOPUM": {
+            "code": "DOOPUM",
+            "name": "Door pump",
+            "type": "String"
+        },
+        "SECLIG": {
+            "code": "SECLIG",
+            "name": "Security lighting",
+            "type": "String"
+        },
+        "EVASIG": {
+            "code": "EVASIG",
+            "name": "Evacuation signage",
+            "type": "String"
+        },
+        "FLOORSPR": {
+            "code": "FLOORSPR",
+            "name": "Floor spring",
+            "type": "String"
+        },
+        "DOOCLO": {
+            "code": "DOOCLO",
+            "name": "Door closer",
+            "type": "String"
+        },
+        "DOOPUSBAR": {
+            "code": "DOOPUSBAR",
+            "name": "Door push bar",
+            "type": "String"
+        },
+        "DOUDOOPUSBAR": {
+            "code": "DOUDOOPUSBAR",
+            "name": "Double door push bar",
+            "type": "String"
+        },
+        "DOOMAG": {
+            "code": "DOOMAG",
+            "name": "Door magnet",
+            "type": "String"
+        },
+        "YELPUSBUT": {
+            "code": "YELPUSBUT",
+            "name": "Yellow push button",
+            "type": "String"
+        }
+    },
+    "FIEX": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "WEIGHT": {
+            "code": "WEIGHT",
+            "name": "Weight",
+            "type": "Real"
+        },
+        "EXTTYPEXTY": {
+            "code": "EXTTYPEXTY",
+            "name": "Extinguishing type",
+            "type": "String"
+        }
+    },
+    "FIFISYHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLTRCLACOATYP": {
+            "code": "FLTRCLACOATYP",
+            "name": "Filter Class Coarse type",
+            "type": "String"
+        },
+        "QTYFLTRCLACOA": {
+            "code": "QTYFLTRCLACOA",
+            "name": "QTY filter class coarse",
+            "type": "Integer"
+        },
+        "FLTRCLAFINTYP": {
+            "code": "FLTRCLAFINTYP",
+            "name": "Filter Class Fine type",
+            "type": "String"
+        },
+        "QTYFLTRCLAFIN": {
+            "code": "QTYFLTRCLAFIN",
+            "name": "QTY filter class fine",
+            "type": "Integer"
+        },
+        "FLTRCARTYP": {
+            "code": "FLTRCARTYP",
+            "name": "Filter Carbon type",
+            "type": "String"
+        },
+        "QTYFLTRCAR": {
+            "code": "QTYFLTRCAR",
+            "name": "QTY filter carbon",
+            "type": "Integer"
+        },
+        "FLTRGRETYP": {
+            "code": "FLTRGRETYP",
+            "name": "Filter grease type",
+            "type": "String"
+        },
+        "QTYFLTRGRE": {
+            "code": "QTYFLTRGRE",
+            "name": "QTY filter grease",
+            "type": "Integer"
+        }
+    },
+    "FIFISYME": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "FIFISYPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "SHASHRECIOV": {
+            "code": "SHASHRECIOV",
+            "name": "Shape",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LGTHMM": {
+            "code": "LGTHMM",
+            "name": "Length",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "FIHORE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "EQUWITDSPCON": {
+            "code": "EQUWITDSPCON",
+            "name": "Equipped with DSP45 connection",
+            "type": "Boolean"
+        },
+        "EQUWITPRECON": {
+            "code": "EQUWITPRECON",
+            "name": "Equipped with pressure control",
+            "type": "Boolean"
+        }
+    },
+    "FIPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "FISC": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "FISE": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "FISH": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "HGHTMM": {
+            "code": "HGHTMM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "FIRRESFIR": {
+            "code": "FIRRESFIR",
+            "name": "Fire resistance",
+            "type": "String"
+        }
+    },
+    "FLCO": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "FLCOME": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "FLCOPL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "FLDR": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "FLFI": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "SUR": {
+            "code": "SUR",
+            "name": "Surface",
+            "type": "Integer"
+        },
+        "MEAOF1ELE": {
+            "code": "MEAOF1ELE",
+            "name": "Measurement of 1 element",
+            "type": "String"
+        },
+        "COL": {
+            "code": "COL",
+            "name": "Colour",
+            "type": "String"
+        }
+    },
+    "FLMEDE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "FLO": {
+        "BUINUM": {
+            "code": "BUINUM",
+            "name": "Building number",
+            "type": "String"
+        },
+        "FLOORCHA": {
+            "code": "FLOORCHA",
+            "name": "floor_char",
+            "type": "String"
+        },
+        "FLOORNAM": {
+            "code": "FLOORNAM",
+            "name": "floor_name",
+            "type": "String"
+        },
+        "LONFLONAM": {
+            "code": "LONFLONAM",
+            "name": "long_floor_name",
+            "type": "String"
+        },
+        "FLOORLEV": {
+            "code": "FLOORLEV",
+            "name": "floor_level",
+            "type": "String"
+        }
+    },
+    "FLOW": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "RELSYSRESYCI": {
+            "code": "RELSYSRESYCI",
+            "name": "Related system",
+            "type": "String"
+        }
+    },
+    "FOEXSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PROLOC": {
+            "code": "PROLOC",
+            "name": "Protected location",
+            "type": "String"
+        },
+        "STOLOC": {
+            "code": "STOLOC",
+            "name": "Storage location",
+            "type": "String"
+        },
+        "FOATYP": {
+            "code": "FOATYP",
+            "name": "Foam type",
+            "type": "String"
+        },
+        "MIXPER": {
+            "code": "MIXPER",
+            "name": "Mixing percentages",
+            "type": "Real"
+        },
+        "FOATANCAP": {
+            "code": "FOATANCAP",
+            "name": "Foam tank capacity",
+            "type": "Integer"
+        },
+        "ALASYSMODTYP": {
+            "code": "ALASYSMODTYP",
+            "name": "Alarm system model/type",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        },
+        "APPEXTREG": {
+            "code": "APPEXTREG",
+            "name": "Applied extinguishing regulation",
+            "type": "String"
+        }
+    },
+    "FRDRHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "FRDRPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "FRPR": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DELPWRW": {
+            "code": "DELPWRW",
+            "name": "Delivered power",
+            "type": "Real"
+        },
+        "PROTYPPRTY TELOT": {
+            "code": "PROTYPPRTY TELOT",
+            "name": "Protection type",
+            "type": "String"
+        },
+        "TRALEN": {
+            "code": "TRALEN",
+            "name": "Tracing length",
+            "type": "Integer"
+        },
+        "ANTLIQ": {
+            "code": "ANTLIQ",
+            "name": "Antifreeze liquide",
+            "type": "String"
+        }
+    },
+    "FUTA": {
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        },
+        "FUETYPFUT": {
+            "code": "FUETYPFUT",
+            "name": "Fuel type",
+            "type": "String"
+        },
+        "TANTYPTATSD": {
+            "code": "TANTYPTATSD",
+            "name": "Tank type",
+            "type": "String"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "MATMASTPL": {
+            "code": "MATMASTPL",
+            "name": "Material",
+            "type": "String"
+        }
+    },
+    "GAALSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        },
+        "IONUM": {
+            "code": "IONUM",
+            "name": "I/O number",
+            "type": "String"
+        }
+    },
+    "GABI": {
+        "CONDAT": {
+            "code": "CONDAT",
+            "name": "Construction date",
+            "type": "Time"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "VOLL": {
+            "code": "VOLL",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "GACO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        }
+    },
+    "GADESY": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "GAEXSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "PROLOC": {
+            "code": "PROLOC",
+            "name": "Protected location",
+            "type": "String"
+        },
+        "STOLOC": {
+            "code": "STOLOC",
+            "name": "Storage location",
+            "type": "String"
+        },
+        "GASTYPGATY": {
+            "code": "GASTYPGATY",
+            "name": "Gas type",
+            "type": "String"
+        },
+        "GASBOTQUA": {
+            "code": "GASBOTQUA",
+            "name": "Gas bottle quantity",
+            "type": "Integer"
+        },
+        "GASBOTCAP": {
+            "code": "GASBOTCAP",
+            "name": "Gas bottle capacity",
+            "type": "Integer"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        },
+        "APPEXTREG": {
+            "code": "APPEXTREG",
+            "name": "Applied extinguishing regulation",
+            "type": "String"
+        },
+        "APPDETREG": {
+            "code": "APPDETREG",
+            "name": "Applied detection regulation",
+            "type": "String"
+        },
+        "ALASYSMODTYP": {
+            "code": "ALASYSMODTYP",
+            "name": "Alarm system model/type",
+            "type": "String"
+        }
+    },
+    "GANEHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "SHASHRECIOV": {
+            "code": "SHASHRECIOV",
+            "name": "Shape",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LGTHMM": {
+            "code": "LGTHMM",
+            "name": "Length",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "GANT": {
+        "CONDAT": {
+            "code": "CONDAT",
+            "name": "Construction date",
+            "type": "Time"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "USEHEI": {
+            "code": "USEHEI",
+            "name": "Useful height",
+            "type": "Integer"
+        },
+        "SPA": {
+            "code": "SPA",
+            "name": "Span",
+            "type": "Integer"
+        },
+        "NUMOFSUPPOI": {
+            "code": "NUMOFSUPPOI",
+            "name": "Number of support points",
+            "type": "Integer"
+        }
+    },
+    "GAVA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "GAVAFU&OI": {
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "GEWE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "WELDPTH": {
+            "code": "WELDPTH",
+            "name": "Well depth",
+            "type": "Real"
+        },
+        "PMPDPTH": {
+            "code": "PMPDPTH",
+            "name": "Pump depth",
+            "type": "Real"
+        },
+        "BOTFLTR": {
+            "code": "BOTFLTR",
+            "name": "Bottom filter",
+            "type": "Real"
+        },
+        "FLTRLEN": {
+            "code": "FLTRLEN",
+            "name": "Filter length",
+            "type": "Real"
+        }
+    },
+    "GRSE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "GTE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "GTN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "GTV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "HEPAUN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        }
+    },
+    "HHMD": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "HIVOCE": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "OPECLOOPC": {
+            "code": "OPECLOOPC",
+            "name": "Open/closed",
+            "type": "String"
+        },
+        "SCASC": {
+            "code": "SCASC",
+            "name": "Scada",
+            "type": "String"
+        },
+        "REMCON": {
+            "code": "REMCON",
+            "name": "Remote control",
+            "type": "Boolean"
+        }
+    },
+    "HIVOCIBR": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "HIVOST": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "COMCO": {
+            "code": "COMCO",
+            "name": "Composition",
+            "type": "String"
+        },
+        "NETNE": {
+            "code": "NETNE",
+            "name": "Net",
+            "type": "String"
+        },
+        "TERBUI": {
+            "code": "TERBUI",
+            "name": "Terminal building",
+            "type": "Boolean"
+        }
+    },
+    "HOBA": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        }
+    },
+    "HOFILO": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MAXLOA": {
+            "code": "MAXLOA",
+            "name": "Maximum load",
+            "type": "Real"
+        },
+        "FIXMOBFIMO": {
+            "code": "FIXMOBFIMO",
+            "name": "Fixed/Mobile",
+            "type": "String"
+        }
+    },
+    "HUMI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "CAPAKGH": {
+            "code": "CAPAKGH",
+            "name": "Capacity",
+            "type": "Real"
+        }
+    },
+    "HYCATEPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "HYCATETA": {
+        "VOLL": {
+            "code": "VOLL",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "HYPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "HYSE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPALS": {
+            "code": "CAPALS",
+            "name": "Capacity",
+            "type": "Integer"
+        }
+    },
+    "HYVA": {
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "INDICA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "HGHTCM": {
+            "code": "HGHTCM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "DEPCM": {
+            "code": "DEPCM",
+            "name": "Depth",
+            "type": "Integer"
+        },
+        "WDTHCM": {
+            "code": "WDTHCM",
+            "name": "Width",
+            "type": "Integer"
+        }
+    },
+    "INDOMOEXWA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "HGHTMM": {
+            "code": "HGHTMM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "INDOMOINWA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "HGHTMM": {
+            "code": "HGHTMM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "INFA": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        }
+    },
+    "INMOITNE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "INWADISYIW": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "INWAHE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "INWATR": {
+        "DEPFLO": {
+            "code": "DEPFLO",
+            "name": "Departure flow",
+            "type": "Integer"
+        },
+        "ARRFLO": {
+            "code": "ARRFLO",
+            "name": "Arrival flow",
+            "type": "Integer"
+        },
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "CLACLASS": {
+            "code": "CLACLASS",
+            "name": "Class",
+            "type": "String"
+        }
+    },
+    "JOPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "KIAP": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "FLUID": {
+            "code": "FLUID",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "KWME": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "COMCOBUS": {
+            "code": "COMCOBUS",
+            "name": "Communication",
+            "type": "String"
+        }
+    },
+    "LASE": {
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "EXTSTEDOWAID": {
+            "code": "EXTSTEDOWAID",
+            "name": "Extendable step-down aid",
+            "type": "Boolean"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "WDTHM": {
+            "code": "WDTHM",
+            "name": "Width",
+            "type": "Integer"
+        }
+    },
+    "LATESH": {
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "EXTSTEDOWAID": {
+            "code": "EXTSTEDOWAID",
+            "name": "Extendable step-down aid",
+            "type": "Boolean"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "WDTHM": {
+            "code": "WDTHM",
+            "name": "Width",
+            "type": "Integer"
+        }
+    },
+    "LED": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MODTYPMOTY": {
+            "code": "MODTYPMOTY",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "LEDE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "LEDESY": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "LESW": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "LIFE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "NUMOFANC": {
+            "code": "NUMOFANC",
+            "name": "Number of anchorpoints",
+            "type": "Integer"
+        }
+    },
+    "LIFI": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRW": {
+            "code": "ELECPWRW",
+            "name": "Electrical power",
+            "type": "Integer"
+        },
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        },
+        "COMCOBUS": {
+            "code": "COMCOBUS",
+            "name": "Communication",
+            "type": "String"
+        }
+    },
+    "LIPRIN": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "PROASSGRO": {
+            "code": "PROASSGRO",
+            "name": "Protected asset group",
+            "type": "String"
+        }
+    },
+    "LOVOST": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "COMCO": {
+            "code": "COMCO",
+            "name": "Composition",
+            "type": "String"
+        },
+        "NETNE": {
+            "code": "NETNE",
+            "name": "Net",
+            "type": "String"
+        },
+        "TERBUI": {
+            "code": "TERBUI",
+            "name": "Terminal building",
+            "type": "Boolean"
+        }
+    },
+    "LOVOSWBR": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "MANO": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "MASHOFVA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIAMM": {
+            "code": "DIAMM",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "MICR": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "MIXE": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "MOFU&OI": {
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "MOPUCO": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "MOWA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "POW": {
+            "code": "POW",
+            "name": "Power",
+            "type": "Real"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "NUMOFSTE": {
+            "code": "NUMOFSTE",
+            "name": "Number of steps",
+            "type": "Integer"
+        },
+        "USEOPE": {
+            "code": "USEOPE",
+            "name": "Usefull opening",
+            "type": "Real"
+        }
+    },
+    "NOREVA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "NOREVAFI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIAMM": {
+            "code": "DIAMM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "EQUWITSTR": {
+            "code": "EQUWITSTR",
+            "name": "Equipped with strainer",
+            "type": "Boolean"
+        }
+    },
+    "NOREVAPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "OIGRSE": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        }
+    },
+    "PASMVE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "LGTHMM": {
+            "code": "LGTHMM",
+            "name": "Length",
+            "type": "Integer"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "STEST": {
+            "code": "STEST",
+            "name": "Steering",
+            "type": "String"
+        },
+        "OPEOP": {
+            "code": "OPEOP",
+            "name": "Operating",
+            "type": "String"
+        }
+    },
+    "PCUN": {
+        "TYP": {
+            "code": "TYP",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "PIHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MAT": {
+            "code": "MAT",
+            "name": "Material",
+            "type": "String"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "PIPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MAT": {
+            "code": "MAT",
+            "name": "Material",
+            "type": "String"
+        },
+        "INSTYP": {
+            "code": "INSTYP",
+            "name": "Insulation type",
+            "type": "String"
+        },
+        "INSTHK": {
+            "code": "INSTHK",
+            "name": "Insulation thickness",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "PLC": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "PLCPCOHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "PLCPCOME": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "PLCPCOPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "PMPME": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "MAXFLO": {
+            "code": "MAXFLO",
+            "name": "Max. flow",
+            "type": "Real"
+        },
+        "SETFLO": {
+            "code": "SETFLO",
+            "name": "Setpoint flow",
+            "type": "Real"
+        },
+        "SPESEL": {
+            "code": "SPESEL",
+            "name": "Speed selection",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "HEAMAX": {
+            "code": "HEAMAX",
+            "name": "Head Max",
+            "type": "String"
+        },
+        "SETHEA": {
+            "code": "SETHEA",
+            "name": "Setpoint Head",
+            "type": "String"
+        },
+        "REDCASREC": {
+            "code": "REDCASREC",
+            "name": "Redundant/Cascade",
+            "type": "String"
+        }
+    },
+    "PRBOSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "GENTYP": {
+            "code": "GENTYP",
+            "name": "Generation type",
+            "type": "String"
+        },
+        "QTYCIRPUM": {
+            "code": "QTYCIRPUM",
+            "name": "QTY circulator pumps",
+            "type": "Integer"
+        },
+        "BUFTAN": {
+            "code": "BUFTAN",
+            "name": "Buffer Tank",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "PRRE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "KVVAL": {
+            "code": "KVVAL",
+            "name": "kv value",
+            "type": "Real"
+        },
+        "PRESET": {
+            "code": "PRESET",
+            "name": "Pressure setting",
+            "type": "Integer"
+        },
+        "MAXMEDTEM": {
+            "code": "MAXMEDTEM",
+            "name": "Max. Medium Temperature",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "PRREVA": {
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "PRSE": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "PUHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "MAXFLO": {
+            "code": "MAXFLO",
+            "name": "Max. flow",
+            "type": "Real"
+        },
+        "SETFLO": {
+            "code": "SETFLO",
+            "name": "Setpoint flow",
+            "type": "Real"
+        },
+        "SPESEL": {
+            "code": "SPESEL",
+            "name": "Speed selection",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "PNPN": {
+            "code": "PNPN",
+            "name": "PN",
+            "type": "String"
+        },
+        "HEAMAX": {
+            "code": "HEAMAX",
+            "name": "Head Max",
+            "type": "String"
+        },
+        "SETHEA": {
+            "code": "SETHEA",
+            "name": "Setpoint Head",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        },
+        "REDCASREC": {
+            "code": "REDCASREC",
+            "name": "Redundant/Cascade",
+            "type": "String"
+        }
+    },
+    "PUPI": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "PUPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "MAXFLO": {
+            "code": "MAXFLO",
+            "name": "Max. flow",
+            "type": "Real"
+        },
+        "SETFLO": {
+            "code": "SETFLO",
+            "name": "Setpoint flow",
+            "type": "Real"
+        },
+        "SPESEL": {
+            "code": "SPESEL",
+            "name": "Speed selection",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "HEAMAX": {
+            "code": "HEAMAX",
+            "name": "Head Max",
+            "type": "String"
+        },
+        "SETHEA": {
+            "code": "SETHEA",
+            "name": "Setpoint Head",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        },
+        "PNPN": {
+            "code": "PNPN",
+            "name": "PN",
+            "type": "String"
+        },
+        "REDCASREC": {
+            "code": "REDCASREC",
+            "name": "Redundant/Cascade",
+            "type": "String"
+        }
+    },
+    "PVIN": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRKVA": {
+            "code": "ELECPWRKVA",
+            "name": "Electrical power",
+            "type": "Real"
+        }
+    },
+    "RACO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "INLTMP": {
+            "code": "INLTMP",
+            "name": "Inlet temperature",
+            "type": "Integer"
+        },
+        "OUTTMP": {
+            "code": "OUTTMP",
+            "name": "Outlet temperature",
+            "type": "Integer"
+        },
+        "QTYFAN": {
+            "code": "QTYFAN",
+            "name": "QTY fans",
+            "type": "Integer"
+        },
+        "QTYFIL": {
+            "code": "QTYFIL",
+            "name": "QTY filters",
+            "type": "Integer"
+        }
+    },
+    "RACOEL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        }
+    },
+    "RAHASYRW": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "RAHO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "UVLAM": {
+            "code": "UVLAM",
+            "name": "UV lamp",
+            "type": "Boolean"
+        }
+    },
+    "RCTA": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        },
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "RECPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "REDOTU": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAPERH": {
+            "code": "CAPAPERH",
+            "name": "Capacity",
+            "type": "Integer"
+        }
+    },
+    "REOSUNROHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "REOSUNROPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "REPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        }
+    },
+    "RERE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECHEA": {
+            "code": "ELECHEA",
+            "name": "Electrical heat",
+            "type": "Boolean"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "POW": {
+            "code": "POW",
+            "name": "Power",
+            "type": "Real"
+        }
+    },
+    "RETA": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "RETAPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "ROADBL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "ROBA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "ROCO": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "SUR": {
+            "code": "SUR",
+            "name": "Surface",
+            "type": "Integer"
+        },
+        "TYPOFINSTYOFIN": {
+            "code": "TYPOFINSTYOFIN",
+            "name": "Type of insulation",
+            "type": "String"
+        },
+        "THIOFISO": {
+            "code": "THIOFISO",
+            "name": "Thickness of isolation",
+            "type": "Integer"
+        },
+        "VAPSCRPRE": {
+            "code": "VAPSCRPRE",
+            "name": "Vapour screen present?",
+            "type": "Boolean"
+        },
+        "PREOFBAL": {
+            "code": "PREOFBAL",
+            "name": "Presence of ballast?",
+            "type": "Boolean"
+        },
+        "GREROO": {
+            "code": "GREROO",
+            "name": "Green roof?",
+            "type": "Boolean"
+        }
+    },
+    "RODO": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "MATMASTPL": {
+            "code": "MATMASTPL",
+            "name": "Material",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "WDTHM": {
+            "code": "WDTHM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "HGHTM": {
+            "code": "HGHTM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "FIRRES": {
+            "code": "FIRRES",
+            "name": "Fire resistance",
+            "type": "String"
+        }
+    },
+    "SAMD": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "SOFVER": {
+            "code": "SOFVER",
+            "name": "Software version",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "SAPOHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "SAPOPL": {
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        },
+        "LEGMANPLA": {
+            "code": "LEGMANPLA",
+            "name": "Legionella management plan",
+            "type": "Boolean"
+        }
+    },
+    "SAREVAHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "OZOPROD": {
+            "code": "OZOPROD",
+            "name": "ozon production",
+            "type": "Integer"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "SAREVAPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SASEGATO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SASI": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "SCBR": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "SCPUGT": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SCRAWA&HYSEGT": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SCWATRPLGT": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SEHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PROPR": {
+            "code": "PROPR",
+            "name": "Process",
+            "type": "String"
+        }
+    },
+    "SELI": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        }
+    },
+    "SEME": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "SEPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PROPR": {
+            "code": "PROPR",
+            "name": "Process",
+            "type": "String"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "SHFACO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "EMESHO": {
+            "code": "EMESHO",
+            "name": "Emergency shower",
+            "type": "String"
+        }
+    },
+    "SHOFISVAHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ACTTYPACT": {
+            "code": "ACTTYPACT",
+            "name": "Actuation type",
+            "type": "String"
+        },
+        "PNPN": {
+            "code": "PNPN",
+            "name": "PN",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "SHOFISVAPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ACTTYPACT": {
+            "code": "ACTTYPACT",
+            "name": "Actuation type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        }
+    },
+    "SHOFVA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIAMM": {
+            "code": "DIAMM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "RELSYSRESYCI": {
+            "code": "RELSYSRESYCI",
+            "name": "Related system",
+            "type": "String"
+        }
+    },
+    "SHOW": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "SISY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        }
+    },
+    "SLDOMOEXWA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "SLDOMOINWA": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "SMCA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SMCU": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "VOL": {
+            "code": "VOL",
+            "name": "Voltage",
+            "type": "Integer"
+        },
+        "DESDPTH": {
+            "code": "DESDPTH",
+            "name": "Descending depth",
+            "type": "Integer"
+        },
+        "FAI": {
+            "code": "FAI",
+            "name": "Failsafe",
+            "type": "Boolean"
+        },
+        "WDTHMM": {
+            "code": "WDTHMM",
+            "name": "Width",
+            "type": "Integer"
+        }
+    },
+    "SOCO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "MAXTHPOW": {
+            "code": "MAXTHPOW",
+            "name": "Max. thermal power",
+            "type": "Real"
+        },
+        "CAPAL": {
+            "code": "CAPAL",
+            "name": "Capacity",
+            "type": "Integer"
+        }
+    },
+    "SPALRE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SPALSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        }
+    },
+    "SPPRACSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PREACTTYPPRACTY": {
+            "code": "PREACTTYPPRACTY",
+            "name": "Pre-action type",
+            "type": "String"
+        },
+        "SPRCLASPCL": {
+            "code": "SPRCLASPCL",
+            "name": "Sprinkler class",
+            "type": "String"
+        },
+        "APPEXTREG": {
+            "code": "APPEXTREG",
+            "name": "Applied extinguishing regulation",
+            "type": "String"
+        },
+        "SPRPROLOC": {
+            "code": "SPRPROLOC",
+            "name": "Sprinkler protected location",
+            "type": "String"
+        },
+        "COMMODTYP": {
+            "code": "COMMODTYP",
+            "name": "Compressor model/type",
+            "type": "String"
+        },
+        "LINALASYS": {
+            "code": "LINALASYS",
+            "name": "Linked alarm system",
+            "type": "String"
+        }
+    },
+    "SPPU": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "PMPTYPPUTY": {
+            "code": "PMPTYPPUTY",
+            "name": "Pump type",
+            "type": "String"
+        },
+        "ENGTYPENTY": {
+            "code": "ENGTYPENTY",
+            "name": "Engine type",
+            "type": "String"
+        }
+    },
+    "SPTA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAM3": {
+            "code": "CAPAM3",
+            "name": "Capacity",
+            "type": "Real"
+        }
+    },
+    "SRCIDA": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "SUB": {
+            "code": "SUB",
+            "name": "Subsystem",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SRHMS": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "SUB": {
+            "code": "SUB",
+            "name": "Subsystem",
+            "type": "String"
+        }
+    },
+    "SRMSE": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "SUB": {
+            "code": "SUB",
+            "name": "Subsystem",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "SSC": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "SUCT": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "TEINOUPA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "TESEFU&OI": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "TOAN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "TRFOHV": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRKVA": {
+            "code": "ELECPWRKVA",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "OILTYP": {
+            "code": "OILTYP",
+            "name": "Oil type",
+            "type": "String"
+        }
+    },
+    "TRHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "TRLV": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "ELECPWRKVA": {
+            "code": "ELECPWRKVA",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "OILTYP": {
+            "code": "OILTYP",
+            "name": "Oil type",
+            "type": "String"
+        }
+    },
+    "TRME": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "TRPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "ELECPWRKW": {
+            "code": "ELECPWRKW",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "DELPWRWM": {
+            "code": "DELPWRWM",
+            "name": "Delivered power",
+            "type": "Real"
+        },
+        "MAXTMPEXP": {
+            "code": "MAXTMPEXP",
+            "name": "Max. temperature exposure",
+            "type": "Integer"
+        }
+    },
+    "TRPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "TRTA": {
+        "VOLM3": {
+            "code": "VOLM3",
+            "name": "Volume",
+            "type": "Integer"
+        }
+    },
+    "TUME": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "TUNN": {
+        "CONDAT": {
+            "code": "CONDAT",
+            "name": "Construction date",
+            "type": "Time"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "USEHEI": {
+            "code": "USEHEI",
+            "name": "Useful height",
+            "type": "Integer"
+        }
+    },
+    "TUSE": {
+        "RELINSDAT": {
+            "code": "RELINSDAT",
+            "name": "Relining installation date",
+            "type": "Time"
+        },
+        "DEPFLO": {
+            "code": "DEPFLO",
+            "name": "Departure flow",
+            "type": "Integer"
+        },
+        "ARRFLO": {
+            "code": "ARRFLO",
+            "name": "Arrival flow",
+            "type": "Integer"
+        },
+        "SHASHRECIOV": {
+            "code": "SHASHRECIOV",
+            "name": "Shape",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "WDTHM": {
+            "code": "WDTHM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "HGHTM": {
+            "code": "HGHTM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "DIAM": {
+            "code": "DIAM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "REL": {
+            "code": "REL",
+            "name": "Relined",
+            "type": "Boolean"
+        }
+    },
+    "TUTESH": {
+        "REN": {
+            "code": "REN",
+            "name": "Renovated",
+            "type": "Boolean"
+        },
+        "RENDAT": {
+            "code": "RENDAT",
+            "name": "Renovation date",
+            "type": "Time"
+        },
+        "DEPFLO": {
+            "code": "DEPFLO",
+            "name": "Departure flow",
+            "type": "Integer"
+        },
+        "ARRFLO": {
+            "code": "ARRFLO",
+            "name": "Arrival flow",
+            "type": "Integer"
+        },
+        "TUBTYPTUTY": {
+            "code": "TUBTYPTUTY",
+            "name": "Tube type",
+            "type": "String"
+        },
+        "TUBSHATUSH": {
+            "code": "TUBSHATUSH",
+            "name": "Tube shape",
+            "type": "String"
+        },
+        "LGTHM": {
+            "code": "LGTHM",
+            "name": "Length",
+            "type": "Real"
+        },
+        "WDTHM": {
+            "code": "WDTHM",
+            "name": "Width",
+            "type": "Integer"
+        },
+        "HGHTM": {
+            "code": "HGHTM",
+            "name": "Height",
+            "type": "Integer"
+        },
+        "DIAM": {
+            "code": "DIAM",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MATTYPMATYCBP": {
+            "code": "MATTYPMATYCBP",
+            "name": "Material type",
+            "type": "String"
+        },
+        "ASBPRE": {
+            "code": "ASBPRE",
+            "name": "Asbestos present",
+            "type": "Boolean"
+        }
+    },
+    "UNPU": {
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "DIAIN": {
+            "code": "DIAIN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        }
+    },
+    "UPFIDE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAKVA": {
+            "code": "CAPAKVA",
+            "name": "Capacity",
+            "type": "Real"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "POWSYSASS": {
+            "code": "POWSYSASS",
+            "name": "Powered system/asset",
+            "type": "String"
+        }
+    },
+    "UPFIPR": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "CAPAKVA": {
+            "code": "CAPAKVA",
+            "name": "Capacity",
+            "type": "Real"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "POWSYSASS": {
+            "code": "POWSYSASS",
+            "name": "Powered system/asset",
+            "type": "String"
+        }
+    },
+    "UPS": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "ELECPWRKVA": {
+            "code": "ELECPWRKVA",
+            "name": "Electrical power",
+            "type": "Real"
+        },
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "AUTONOMY": {
+            "code": "AUTONOMY",
+            "name": "Autonomy",
+            "type": "Real"
+        }
+    },
+    "URIN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DRYWETDRWE": {
+            "code": "DRYWETDRWE",
+            "name": "Dry/Wet",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "VACA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "ELECHEA": {
+            "code": "ELECHEA",
+            "name": "Electrical heat",
+            "type": "Boolean"
+        },
+        "MAXTHPOWHEA": {
+            "code": "MAXTHPOWHEA",
+            "name": "Max. thermal power - Heating",
+            "type": "Real"
+        },
+        "MAXTHPOWCOO": {
+            "code": "MAXTHPOWCOO",
+            "name": "Max. thermal power - Cooling",
+            "type": "Real"
+        },
+        "MINOPEPOS": {
+            "code": "MINOPEPOS",
+            "name": "Min. open position",
+            "type": "Integer"
+        },
+        "MAXOPEPOS": {
+            "code": "MAXOPEPOS",
+            "name": "Max. open position",
+            "type": "Integer"
+        }
+    },
+    "VISO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "VOALSYVA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    },
+    "WACL": {
+        "MOD": {
+            "code": "MOD",
+            "name": "Model",
+            "type": "String"
+        },
+        "MANAUTMAA": {
+            "code": "MANAUTMAA",
+            "name": "Manual/Automatic",
+            "type": "String"
+        }
+    },
+    "WACOHEANCO": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "PNPN": {
+            "code": "PNPN",
+            "name": "PN",
+            "type": "String"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "WACOOUIN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "FLUID": {
+            "code": "FLUID",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "WACOPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "DIADN": {
+            "code": "DIADN",
+            "name": "Diameter",
+            "type": "Integer"
+        },
+        "LINTOBACEMS": {
+            "code": "LINTOBACEMS",
+            "name": "Linked to BAC EMS",
+            "type": "Boolean"
+        },
+        "BIL": {
+            "code": "BIL",
+            "name": "Billing",
+            "type": "Boolean"
+        },
+        "FLUIDFLWGO": {
+            "code": "FLUIDFLWGO",
+            "name": "Fluid",
+            "type": "String"
+        }
+    },
+    "WAEXSY": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "PROLOC": {
+            "code": "PROLOC",
+            "name": "Protected location",
+            "type": "String"
+        },
+        "SYSWORPRE": {
+            "code": "SYSWORPRE",
+            "name": "System working pressure",
+            "type": "Real"
+        },
+        "APPEXTREG": {
+            "code": "APPEXTREG",
+            "name": "Applied extinguishing regulation",
+            "type": "String"
+        },
+        "ALASYSMODTYP": {
+            "code": "ALASYSMODTYP",
+            "name": "Alarm system model/type",
+            "type": "String"
+        },
+        "TRANSMTRENE": {
+            "code": "TRANSMTRENE",
+            "name": "Transmission",
+            "type": "String"
+        },
+        "TRANSMTYPTRTYIO": {
+            "code": "TRANSMTYPTRTYIO",
+            "name": "Transmission type",
+            "type": "String"
+        },
+        "NETOUT": {
+            "code": "NETOUT",
+            "name": "Network outlet",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "SIMNRORTEL": {
+            "code": "SIMNRORTEL",
+            "name": "SIM nr. or TEL outlet",
+            "type": "String"
+        }
+    },
+    "WAFA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "WAFI": {
+        "TYPTYABC": {
+            "code": "TYPTYABC",
+            "name": "Type",
+            "type": "String"
+        },
+        "SUR": {
+            "code": "SUR",
+            "name": "Surface",
+            "type": "Integer"
+        },
+        "MEAOF1ELE": {
+            "code": "MEAOF1ELE",
+            "name": "Measurement of 1 element",
+            "type": "String"
+        },
+        "THIOFFIN": {
+            "code": "THIOFFIN",
+            "name": "Thickness of finishing",
+            "type": "Integer"
+        },
+        "COL": {
+            "code": "COL",
+            "name": "Colour",
+            "type": "String"
+        }
+    },
+    "WAHE": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLTR": {
+            "code": "FLTR",
+            "name": "Filters",
+            "type": "Boolean"
+        }
+    },
+    "WAHY": {
+        "PLAMODPLMO": {
+            "code": "PLAMODPLMO",
+            "name": "Placement mode",
+            "type": "String"
+        }
+    },
+    "WASEIN": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "WASH": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "QTYSIP": {
+            "code": "QTYSIP",
+            "name": "QTY siphons",
+            "type": "Integer"
+        }
+    },
+    "WASOHV": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "SALTANCAP": {
+            "code": "SALTANCAP",
+            "name": "Salt tank capacity",
+            "type": "Integer"
+        },
+        "QTYVES": {
+            "code": "QTYVES",
+            "name": "QTY vessels",
+            "type": "Integer"
+        }
+    },
+    "WASOPL": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "FLWM3H": {
+            "code": "FLWM3H",
+            "name": "Flow",
+            "type": "Real"
+        },
+        "SALTANCAP": {
+            "code": "SALTANCAP",
+            "name": "Salt tank capacity",
+            "type": "Integer"
+        },
+        "QTYVES": {
+            "code": "QTYVES",
+            "name": "QTY vessels",
+            "type": "Integer"
+        }
+    },
+    "WEVA": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        }
+    },
+    "WSHBS": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "SOFVER": {
+            "code": "SOFVER",
+            "name": "Software version",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "SUB": {
+            "code": "SUB",
+            "name": "Subsystem",
+            "type": "String"
+        }
+    },
+    "WTMD": {
+        "MODTYP": {
+            "code": "MODTYP",
+            "name": "Model/Type",
+            "type": "String"
+        },
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        }
+    },
+    "XRI": {
+        "IPADR": {
+            "code": "IPADR",
+            "name": "IP Adress",
+            "type": "String"
+        },
+        "MACADR": {
+            "code": "MACADR",
+            "name": "MAC adress",
+            "type": "String"
+        },
+        "VLANR": {
+            "code": "VLANR",
+            "name": "VLAN nr",
+            "type": "String"
+        }
+    }
+}
