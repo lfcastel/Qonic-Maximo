@@ -3,10 +3,12 @@ import json
 from typing import Dict, List, TypedDict, Any, Optional
 from datetime import datetime
 
+from LoggingSetup import get_logger
 from MaximoClient import MaximoClient
 
 maximoClient = MaximoClient()
 BSDD_MAPPING_PATH = Path("bsdd/BsddMapping.json")
+logger = get_logger()
 
 
 class AssetProperty(TypedDict):
@@ -19,8 +21,6 @@ ASSETSPEC_MAP: Dict[str, Dict[str, AssetProperty]] = {}
 if BSDD_MAPPING_PATH.exists():
     with open(BSDD_MAPPING_PATH, "r", encoding="utf-8") as f:
         ASSETSPEC_MAP = json.load(f)
-        print(f"Loaded {len(ASSETSPEC_MAP)} mappings from {BSDD_MAPPING_PATH}")
-
 
 def prop_val(obj):
     """
@@ -34,7 +34,6 @@ def prop_val(obj):
     if v == "" or v is None:
         return None
 
-    # TODO: A bug in Qonic sometimes adds extra whitespace around values
     return v.strip() if isinstance(v, str) else v
 
 
@@ -59,7 +58,7 @@ def convert_value_for_maximo_field(
     if domainid:
         valid_values = maximoClient.get_domain_values(domainid)
         if str(value) not in valid_values:
-            print(f"Value '{value}' for property '{property_code}' is not in domain '{domainid}'.")
+            logger.warning(f"Value '{value}' for property '{property_code}' is not in domain '{domainid}'.")
             return {"alnvalue": None}
 
     if data_type == "Boolean":
@@ -69,14 +68,14 @@ def convert_value_for_maximo_field(
         try:
             return {"numvalue": int(float(value))}
         except (ValueError, TypeError):
-            print(f"Invalid Integer value '{value}' for property '{property_code}'.")
+            logger.warning(f"Invalid Integer value '{value}' for property '{property_code}'.")
             return {"numvalue": None}
 
     if data_type == "Real":
         try:
             return {"numvalue": float(value)}
         except (ValueError, TypeError):
-            print(f"Invalid Real value '{value}' for property '{property_code}'.")
+            logger.warning(f"Invalid Real value '{value}' for property '{property_code}'.")
             return {"numvalue": None}
 
     if data_type == "Time":
@@ -87,7 +86,7 @@ def convert_value_for_maximo_field(
                 dt = datetime.fromisoformat(value)
                 return {"datevalue": dt.isoformat()}
             except ValueError:
-                print(f"Invalid date string '{value}' for property '{property_code}'.")
+                logger.warning(f"Invalid date string '{value}' for property '{property_code}'.")
                 return {"datevalue": None}
 
     # Default to string
@@ -102,16 +101,24 @@ def build_assetspec_from_qonic(
     if not code:
         return []
 
-    rows = []
     class_lookup = ASSETSPEC_MAP.get(code, {})
 
     class_structure = maximoClient.get_class_structure(classstructureid, code)
+    guid = product.get("Guid", "")
+    rows = [{
+        "classstructureid": classstructureid,
+        "orgid": orgid,
+        "assetattrid": "IFCGUID",
+        "linearassetspecid": 0,
+        "alnvalue": guid,
+    }]
+
     for attribute in class_structure:
         attrid = attribute.get("assetattrid")
         domainid = attribute.get('domainid') if attribute else None
 
         if attrid not in class_lookup:
-            print(f"Attribute '{attrid}' not found as property in BSDD for Classification '{code}'") # TODO error warning
+            logger.warning(f"Attribute '{attrid}' not found in ASSETSPEC_MAP for Classification '{code}'")
             continue
 
         property = class_lookup[attrid]
@@ -120,7 +127,7 @@ def build_assetspec_from_qonic(
         raw = prop_val(product[property_name])
         value_field = convert_value_for_maximo_field(raw, data_type, attrid, domainid)
         if not value_field:
-            print(f"Skipping property '{property_name}' with value '{raw}' for class '{code}'")
+            logger.warning(f"Invalid value for property '{property_name}' with value '{raw}' for class '{code}'")
             continue
 
         row = {
@@ -144,12 +151,12 @@ def get_asset_class_info(product: dict) -> tuple[Optional[str], Optional[str], O
     Returns:
         tuple: (code, classstructureid, hierarchypath) or (None, None, None) if not found.
     """
-    code = product.get('Code', '').strip()
-    code_value = code.split()[0] if code else None
-
-    if not code_value:
+    codes = get_valid_codes(product)
+    if not codes or len(codes) != 1:
+        logger.warning(f"Product {product.get('Guid', 'Unknown')} does not have a valid code or has multiple codes: {codes}")
         return None, None, None
 
+    code_value = codes[0]
     response = maximoClient.query_asset_classes(
         where=f'spi:classificationid="{code_value}"',
         select="spi:classstructureid,spi:hierarchypath"
@@ -157,13 +164,14 @@ def get_asset_class_info(product: dict) -> tuple[Optional[str], Optional[str], O
 
     members = response.get('member') or []
     if not members:
+        logger.warning(f"No class structure found for code '{code_value}'")
         return code_value, None, None
 
     asset_class = members[0]
     return code_value, asset_class.get("classstructureid"), asset_class.get("hierarchypath")
 
 
-def qonic_product_to_maximo_asset(product: dict, *, orgid: str, siteid: str, locations: dict) -> dict:
+def qonic_product_to_maximo_asset(product: dict, functional_location: dict, orgid: str, siteid: str) -> dict | None:
     """
     Convert a Qonic product dict to a Maximo AddChange asset format.
     """
@@ -173,12 +181,11 @@ def qonic_product_to_maximo_asset(product: dict, *, orgid: str, siteid: str, loc
     manufacturer = prop_val(product.get("Manufacturer"))
     assettag = prop_val(product.get("Tag"))
 
-    location_id = product.get('SpatialLocation', {}).get('SpatialLocationId')
-    location_name = product.get('SpatialLocation', {}).get('name')
-    if location_id and location_id in locations:
-        location_name = locations[location_id].get('name')
-
     code, classstructureid, hierarchypath = get_asset_class_info(product)
+    if not code or not classstructureid:
+        return None
+
+    functional_location_id = functional_location["location"]
 
     asset = {
         "assetnum": assetnum,
@@ -187,7 +194,8 @@ def qonic_product_to_maximo_asset(product: dict, *, orgid: str, siteid: str, loc
         "orgid": orgid,
         "description": desc,
         "hierarchypath": hierarchypath,
-        "location": location_name if location_name else None,
+        "location": functional_location_id,
+        "b_qrcode": functional_location_id
     }
 
     if manufacturer:
@@ -195,9 +203,6 @@ def qonic_product_to_maximo_asset(product: dict, *, orgid: str, siteid: str, loc
 
     if assettag:
         asset["assettag"] = str(assettag)
-
-    if location_name:
-        asset["location"] = location_name
 
     if not classstructureid or not code:
         return asset
@@ -207,4 +212,8 @@ def qonic_product_to_maximo_asset(product: dict, *, orgid: str, siteid: str, loc
         asset["assetspec"] = assetspec_rows
 
     return asset
+
+def get_valid_codes(product: dict) -> List[str]:
+    codes = product.get("Code", {})
+    return [code['Identification'] for code in codes.values() if 'Identification' in code and code['Identification'] in ASSETSPEC_MAP]
 

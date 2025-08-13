@@ -4,7 +4,9 @@ from typing import Optional
 import requests
 
 from LocationMapper import qonic_spatial_location_to_maximo_location
+from LoggingSetup import get_logger
 
+logger = get_logger()
 
 class MaximoException(Exception):
     """
@@ -369,7 +371,7 @@ class MaximoClient:
             return None
 
         if location_id not in locations:
-            print(f"Location ID {location_id} not found in Qonic locations.")
+            logger.warning(f"Location ID {location_id} not found in Qonic locations.")
             return None
 
         location = locations[location_id]
@@ -391,8 +393,7 @@ class MaximoClient:
         maximo_location = qonic_spatial_location_to_maximo_location(location, parent=parent, siteid=siteid, orgid=orgid,
                                                                     system_id=system_id)
         response = self.sync_location(maximo_location)
-        print(
-            f"Synced location '{response.get('location', 'UNKNOWN')}' for Qonic location '{location_id} with parent '{parent}'.")
+        logger.info(f"Synced location '{response.get('location', 'UNKNOWN')}' for Qonic location '{location_id}' with parent '{parent}'.")
 
         synced.add(location_id)
         return response
