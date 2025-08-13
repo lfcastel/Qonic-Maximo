@@ -124,11 +124,16 @@ def build_assetspec_from_qonic(
         property = class_lookup[attrid]
         property_name = property.get("name")
         data_type = property.get("type", "String")
-        raw = prop_val(product[property_name])
-        value_field = convert_value_for_maximo_field(raw, data_type, attrid, domainid)
+        if property_name not in product:
+            logger.warning(f"Property '{property_name}' not found in product for class '{code}'")
+            value_field = {}
+        else:
+            raw = prop_val(product[property_name])
+            value_field = convert_value_for_maximo_field(raw, data_type, attrid, domainid)
+
         if not value_field:
             logger.warning(f"Invalid value for property '{property_name}' with value '{raw}' for class '{code}'")
-            continue
+            value_field = {}
 
         row = {
             "classstructureid": classstructureid,
@@ -187,6 +192,10 @@ def qonic_product_to_maximo_asset(product: dict, functional_location: dict, orgi
 
     functional_location_id = functional_location["location"]
 
+    if len(desc) > 100:
+        logger.warning(f"Description for asset {assetnum} is too long, truncating to 100 characters.")
+        desc = desc[:100]
+
     asset = {
         "assetnum": assetnum,
         "newassetnum": assetnum,
@@ -217,3 +226,15 @@ def get_valid_codes(product: dict) -> List[str]:
     codes = product.get("Code", {})
     return [code['Identification'] for code in codes.values() if 'Identification' in code and code['Identification'] in ASSETSPEC_MAP]
 
+def filter_products_by_code(products: List[dict], codes: List[str]) -> List[dict]:
+    """
+    Filter products by a list of valid codes.
+
+    Args:
+        products (List[dict]): List of product dictionaries.
+        codes (List[str]): List of valid codes to filter by.
+
+    Returns:
+        List[dict]: Filtered list of products that match any of the valid codes.
+    """
+    return [product for product in products if get_valid_codes(product) and any(code in get_valid_codes(product) for code in codes)]

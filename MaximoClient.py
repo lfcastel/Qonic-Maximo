@@ -322,7 +322,7 @@ class MaximoClient:
         response = self._post("QONIC_MXAPILOCATIONS", json=payload)
         return response[0]["_responsedata"] if response and '_responsedata' in response[0] else None
 
-    def remove_location(self, location: str, siteid: str, orgid: str):
+    def delete_location(self, location: str, siteid: str, orgid: str):
         """
         Remove the parent location from a given location in Maximo.
 
@@ -352,7 +352,7 @@ class MaximoClient:
         response = self._post("QONIC_MXAPILOCATIONS", json=payload)
         return response[0]["_responsedata"] if response and '_responsedata' in response[0] else None
 
-    def sync_location_with_parents(self, location_id, locations, siteid, orgid, system_id, parent_id, synced, delete=False):
+    def sync_location_with_parents(self, location_id, locations, siteid, orgid, system_id, parent_id, synced):
         """
         Recursively ensure that all parent locations exist in Maximo before syncing the current location.
 
@@ -361,14 +361,20 @@ class MaximoClient:
             locations (dict): Dictionary of all Qonic locations {guid: location_data}.
             siteid (str): Maximo site ID.
             orgid (str): Maximo organization ID.
-            synced (set): A set of already synced locations to avoid duplicates.
+            synced (list): A set of already synced locations to avoid duplicates.
 
         Returns:
             dict: The Maximo response of the current location.
         """
-        # If location is already synced, skip
-        if location_id in synced:
-            return None
+        if not location_id:
+            logger.error("Location ID is required for syncing.")
+            exit(1)
+
+        location_name = locations[location_id].get('name').strip()
+        prev_loc = next((loc for loc in synced if loc.get('location') == location_name), None)
+        if prev_loc:
+            logger.info(f"Location '{location_id}' is already synced, skipping.")
+            return prev_loc
 
         if location_id not in locations:
             logger.warning(f"Location ID {location_id} not found in Qonic locations.")
@@ -378,22 +384,17 @@ class MaximoClient:
         parent_guid = location['parentGuid']
         parent_name = locations[parent_guid]['name'] if parent_guid and parent_guid in locations else None
 
-        if delete:
-            self.remove_location(location['name'], siteid, orgid)
-
-        # Sync parent first
         if not parent_guid or parent_name == 'Default':
             parent = parent_id
         else:
             parent = \
-            self.sync_location_with_parents(parent_guid, locations, siteid, orgid, system_id, parent_id, synced, delete=delete)[
+            self.sync_location_with_parents(parent_guid, locations, siteid, orgid, system_id, parent_id, synced)[
                 'location']
 
-        # Convert Qonic location to Maximo format and sync
         maximo_location = qonic_spatial_location_to_maximo_location(location, parent=parent, siteid=siteid, orgid=orgid,
                                                                     system_id=system_id)
         response = self.sync_location(maximo_location)
         logger.info(f"Synced location '{response.get('location', 'UNKNOWN')}' for Qonic location '{location_id}' with parent '{parent}'.")
 
-        synced.add(location_id)
+        synced.append(response)
         return response
