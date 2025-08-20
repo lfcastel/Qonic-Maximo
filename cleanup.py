@@ -69,8 +69,8 @@ for loc in deletion_order:
     except Exception as e:
         logger.error(f"Failed to delete location {loc}: {e}")
 
-remaining_assets = [a for a in synced_assets if a not in deleted_assets]
-remaining_locations = [l for l in synced_locations if l not in deleted_locations]
+remaining_assets = [a for a in synced_assets if tuple(a) not in deleted_assets]
+remaining_locations = [l for l in synced_locations if tuple(l) not in deleted_locations]
 
 with open("synced_data.json", "w") as f:
     json.dump({
