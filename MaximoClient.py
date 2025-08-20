@@ -284,6 +284,25 @@ class MaximoClient:
         members = response.get("member", [])
         return members[0]['classspec'] if members else None
 
+    def get_locations_with_parent(self, parent: str) -> Optional[dict]:
+        """
+        Retrieve a location by its name, site ID, and organization ID.
+
+        Args:
+            location (str): The name of the location.
+            siteid (str): Maximo site ID.
+            orgid (str): Maximo organization ID.
+
+        Returns:
+            dict: Parsed JSON response from Maximo or None if not found.
+        """
+        params = {
+            "oslc.where": f'spi:parent="{parent}"',
+            "oslc.select": "*"
+        }
+        response = self._get("MXAPILOCATION", params=params)
+        return response['member']
+
     def sync_location(self, location_data: dict):
         """
         Create or update a location using AddChange bulk PATCH.

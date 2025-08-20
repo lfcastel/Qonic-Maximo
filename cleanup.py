@@ -4,7 +4,7 @@ from collections import defaultdict
 from dotenv import load_dotenv; load_dotenv()
 from LoggingSetup import setup_logging, get_logger
 setup_logging(log_dir="logs", base_name="qonic_maximo_cleanup.log")
-from MaximoClient import MaximoClient
+from MaximoClient import MaximoClient, MaximoException
 
 orgId = "BRU-ORG"
 siteId = "BRU"
@@ -66,6 +66,19 @@ for loc in deletion_order:
         maximoClient.delete_location(loc, siteid=siteId, orgid=orgId)
         logger.info(f"Deleted location {loc} in Maximo.")
         deleted_locations.append((loc, parent_of.get(loc, "")))
+    except MaximoException as e:
+        # Fail-safe: delete location if it still has children
+        if len(e.args) and "Location has children" in e.args[0]:
+            children = maximoClient.get_locations_with_parent(loc)
+            for child in children:
+                child_location = child.get("location")
+                try:
+                    maximoClient.delete_location(child_location, siteid=siteId, orgid=orgId)
+                    logger.info(f"Deleted child location {child_location} of {loc} in Maximo.")
+                    deleted_locations.append((child_location, loc))
+                except Exception as ce:
+                    logger.error(f"Failed to delete child location {child_location}: {ce}")
+
     except Exception as e:
         logger.error(f"Failed to delete location {loc}: {e}")
 
