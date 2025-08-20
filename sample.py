@@ -1,10 +1,10 @@
+from dotenv import load_dotenv; load_dotenv()
 import os
 import json
 
 from LoggingSetup import setup_logging, get_logger
 setup_logging(log_dir="logs", base_name="qonic_maximo_sync.log")
 
-from dotenv import load_dotenv; load_dotenv()
 from AssetMapper import qonic_product_to_maximo_asset, get_valid_codes, ASSETSPEC_MAP, filter_products_by_code
 from LocationMapper import qonic_product_to_maximo_functional_location
 
