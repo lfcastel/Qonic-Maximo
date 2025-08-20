@@ -58,7 +58,6 @@ for (ifcguid, assetnum) in synced_assets:
         deleted_assets.append((ifcguid, assetnum))
     except Exception as e:
         logger.error(f"Failed to delete asset {assetnum}: {e}")
-        break
 
 
 deleted_locations = []
@@ -69,7 +68,6 @@ for loc in deletion_order:
         deleted_locations.append((loc, parent_of.get(loc, "")))
     except Exception as e:
         logger.error(f"Failed to delete location {loc}: {e}")
-        break
 
 remaining_assets = [a for a in synced_assets if a not in deleted_assets]
 remaining_locations = [l for l in synced_locations if l not in deleted_locations]
