@@ -41,7 +41,7 @@ class QonicClient:
             return
         else:
             logger.error(f"An error occurred: {err}")
-        exit()
+        exit(1)
 
     def _get(self, path, params=None):
         try:

@@ -4,17 +4,13 @@ import json
 from LoggingSetup import setup_logging, get_logger
 setup_logging(log_dir="logs", base_name="qonic_maximo_sync.log")
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv; load_dotenv()
 from AssetMapper import qonic_product_to_maximo_asset, get_valid_codes, ASSETSPEC_MAP, filter_products_by_code
 from LocationMapper import qonic_product_to_maximo_functional_location
 
-load_dotenv()
 
 from QonicClient import QonicClient
 from MaximoClient import MaximoClient
-
-# TODO: Removal from Maximo of assets that no longer exist in Qonic
-# TODO: IFC id als asset attribute toevoegen (toevoegen aan alle classificaties) - investigate by louis
 
 projectId = os.environ["QONIC_PROJECT_ID"]
 modelId = os.environ["QONIC_MODEL_ID"]
@@ -31,13 +27,14 @@ orgId = "BRU-ORG"
 siteId = "BRU"
 systemId = "PRIMARY"
 parentId = "BUILDINGS"
+qonicOperation = "add"
 logger = get_logger()
 
 locations = qonicClient.list_locations(projectId)
 available_data = qonicClient.available_fields(projectId, modelId)
 products = qonicClient.query_products(projectId, modelId, fields=available_data, filters=productFilters)
-product_location_ids = {product['SpatialLocation']['SpatialLocationId'] for product in products if 'SpatialLocation' in product and 'SpatialLocationId' in product['SpatialLocation'] and len(product['SpatialLocation']['SpatialLocationId']) > 0}
 products = filter_products_by_code(products, codeFilter)
+product_location_ids = {product['SpatialLocation']['SpatialLocationId'] for product in products if 'SpatialLocation' in product and 'SpatialLocationId' in product['SpatialLocation'] and len(product['SpatialLocation']['SpatialLocationId']) > 0}
 
 
 synced=list()
@@ -47,29 +44,30 @@ for location_id in product_location_ids:
 
 synced_count = 0
 qonicModifications = {
-    "add": {"FunctionalLocationId": {}}
+    qonicOperation: {"FunctionalLocationId": {}, "AssetId": {}},
 }
 
 synced_locations = set([tuple((loc['location'], loc['lochierarchy'][0]['parent'])) for loc in synced])
 synced_assets = set()
 for i, product in enumerate(products):
     functional_location = maximoClient.sync_location(qonic_product_to_maximo_functional_location(product, siteid=siteId, orgid=orgId, system_id=systemId, locations=locations))
-    synced_locations.add((functional_location['location'], functional_location['lochierarchy'][0]['parent']))
-    logger.info(f"Synced functional location {functional_location['location']} for product {product['Guid']} in Maximo.")
-
-    qonicModifications["add"]["FunctionalLocationId"][product['Guid']] = {"PropertySet": "",
-                                                                          "Value": functional_location['location']}
     asset_payload = qonic_product_to_maximo_asset(product, functional_location, orgid=orgId, siteid=siteId)
     if not asset_payload:
-        logger.warning(f"Skipping product {product['Guid']} due to a problem with asset mapping.")
+        logger.warning(f"Skipping product {product['Guid']} due to a problem with asset mapping. Deleting functional location {functional_location['location']} in Maximo.")
+        maximoClient.delete_location(functional_location['location'], siteid=siteId, orgid=orgId)
         continue
 
     response = maximoClient.sync_asset(asset_payload)
+    assetnum = response[0]['_responsedata']['assetnum']
 
-    synced_assets.add(product['Guid'])
-    createdAssetId = response[0]['_responsedata']['assetuid']
+    qonicModifications[qonicOperation]["FunctionalLocationId"][product['Guid']] = {"PropertySet": "BAC", "Value": functional_location['location']}
+    qonicModifications[qonicOperation]["AssetId"][product['Guid']] = {"PropertySet": "BAC", "Value": assetnum}
     synced_count += 1
-    logger.info(f"Created/updated asset {createdAssetId} for product {product['Guid']} in Maximo.")
+    synced_locations.add((functional_location['location'], functional_location['lochierarchy'][0]['parent']))
+    synced_assets.add((product['Guid'], assetnum))
+    createdAssetId = response[0]['_responsedata']['assetuid']
+    logger.info(f"Synced functional location {functional_location['location']} for product {product['Guid']} in Maximo.")
+    logger.info(f"Created/updated asset {assetnum} for product {product['Guid']} in Maximo.")
     if i % 100 == 0:
         logger.info(f"Processed {i}/{len(products)} products, synced {synced_count} assets so far.")
 
@@ -78,24 +76,23 @@ if 'errors' in response and response['errors']:
     for error in response['errors']:
         logger.error(f"Failed to push modification: {error}")
 else:
-    logger.info(f"Successfully pushed {len(qonicModifications['add']['FunctionalLocationId'])} functional locations to Qonic.")
+    logger.info(
+        f"Successfully pushed {len(qonicModifications[qonicOperation]['FunctionalLocationId'])} functional locations and {len(qonicModifications[qonicOperation]['AssetId'])} assets to Qonic.")
 
-# Write synced data to file
-output_path = "synced_data.json"
 
 new_assets = set(synced_assets)
 new_locations = set(tuple(item) for item in synced_locations)
 
+output_path = "synced_data.json"
 if os.path.exists(output_path):
     with open(output_path, "r", encoding="utf-8") as f:
         existing = json.load(f)
-    existing_assets = set(existing.get("synced_assets", []))
+    existing_assets = set(tuple(item) for item in existing.get("synced_assets", []))
     existing_locations = set(tuple(item) for item in existing.get("synced_locations", []))
 else:
     existing_assets = set()
     existing_locations = set()
 
-# Merge
 merged_assets = sorted(existing_assets | new_assets)
 merged_locations = sorted(existing_locations | new_locations)
 

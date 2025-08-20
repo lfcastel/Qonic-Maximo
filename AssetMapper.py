@@ -36,8 +36,6 @@ def prop_val(obj):
 
     return v.strip() if isinstance(v, str) else v
 
-
-
 QONIC_TO_MAXIMO_TYPE = {
     "String": "aln",
     "Integer": "num",
@@ -89,7 +87,6 @@ def convert_value_for_maximo_field(
                 logger.warning(f"Invalid date string '{value}' for property '{property_code}'.")
                 return {"datevalue": None}
 
-    # Default to string
     return {"alnvalue": str(value)}
 
 def build_assetspec_from_qonic(
@@ -102,16 +99,8 @@ def build_assetspec_from_qonic(
         return []
 
     class_lookup = ASSETSPEC_MAP.get(code, {})
-
     class_structure = maximoClient.get_class_structure(classstructureid, code)
-    guid = product.get("Guid", "")
-    rows = [{
-        "classstructureid": classstructureid,
-        "orgid": orgid,
-        "assetattrid": "IFCGUID",
-        "linearassetspecid": 0,
-        "alnvalue": guid,
-    }]
+    rows = []
 
     for attribute in class_structure:
         attrid = attribute.get("assetattrid")
@@ -181,7 +170,7 @@ def qonic_product_to_maximo_asset(product: dict, functional_location: dict, orgi
     Convert a Qonic product dict to a Maximo AddChange asset format.
     """
 
-    assetnum = product.get("Guid")
+    assetnum = product.get("AssetId", {}).get("Value")
     desc = product.get("Name") or prop_val(product.get("Description")) or assetnum
     manufacturer = prop_val(product.get("Manufacturer"))
     assettag = prop_val(product.get("Tag"))
@@ -197,14 +186,13 @@ def qonic_product_to_maximo_asset(product: dict, functional_location: dict, orgi
         desc = desc[:100]
 
     asset = {
-        "assetnum": assetnum,
-        "newassetnum": assetnum,
         "siteid": siteid,
         "orgid": orgid,
         "description": desc,
         "hierarchypath": hierarchypath,
         "location": functional_location_id,
-        "b_qrcode": functional_location_id
+        "b_qrcode": functional_location_id,
+        "bim_ifcguid": product.get("Guid"),
     }
 
     if manufacturer:
@@ -212,6 +200,9 @@ def qonic_product_to_maximo_asset(product: dict, functional_location: dict, orgi
 
     if assettag:
         asset["assettag"] = str(assettag)
+
+    if assetnum:
+        asset["assetnum"] = str(assetnum)
 
     if not classstructureid or not code:
         return asset
