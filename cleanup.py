@@ -1,6 +1,7 @@
 import json
 from collections import defaultdict
 
+from dotenv import load_dotenv; load_dotenv()
 from LoggingSetup import setup_logging, get_logger
 setup_logging(log_dir="logs", base_name="qonic_maximo_cleanup.log")
 from MaximoClient import MaximoClient
