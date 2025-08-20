@@ -121,7 +121,7 @@ def build_assetspec_from_qonic(
             value_field = convert_value_for_maximo_field(raw, data_type, attrid, domainid)
 
         if not value_field:
-            logger.warning(f"Invalid value for property '{property_name}' with value '{raw}' for class '{code}'")
+            logger.warning(f"Invalid value for property '{property_name}' with for class '{code}'")
             value_field = {}
 
         row = {
