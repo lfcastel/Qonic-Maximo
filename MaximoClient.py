@@ -5,8 +5,7 @@ import requests
 
 from LocationMapper import qonic_spatial_location_to_maximo_location
 from LoggingSetup import get_logger
-
-logger = get_logger()
+from ProgressTracker import get_progress_tracker
 
 class MaximoException(Exception):
     """
@@ -32,7 +31,9 @@ class MaximoClient:
             "properties": "*",
             "x-method-override": "BULK",
         })
-        self.cookies = {}  # You can set this dynamically if needed
+        self.cookies = {}
+        self.logger = get_logger()
+        self.progress_tracker = get_progress_tracker()
 
     def _with_default_params(self, params: Optional[dict] = None) -> dict:
         params = params or {}
@@ -249,6 +250,7 @@ class MaximoClient:
             }
         ]
         return self._post("MXAPIASSET", json=payload)
+        self.progress_tracker.log_info(f"Deleting asset '{assetnum}' in site '{siteid}' and org '{orgid}'")
 
 
     def get_domain_values(self, domain_id: str) -> list[str]:
@@ -301,6 +303,25 @@ class MaximoClient:
             "oslc.select": "*"
         }
         response = self._get("MXAPILOCATION", params=params)
+        return response['member']
+
+    def get_assets_with_location(self, location: str, siteid: str, orgid: str) -> Optional[dict]:
+        """
+        Retrieve an asset by its location, site ID, and organization ID.
+
+        Args:
+            location (str): The name of the location.
+            siteid (str): Maximo site ID.
+            orgid (str): Maximo organization ID.
+
+        Returns:
+            dict: Parsed JSON response from Maximo or None if not found.
+        """
+        params = {
+            "oslc.where": f'location="{location}" and siteid="{siteid}" and orgid="{orgid}"',
+            "oslc.select": "*"
+        }
+        response = self._get("MXAPIASSET", params=params)
         return response['member']
 
     def sync_location(self, location_data: dict):
@@ -386,17 +407,17 @@ class MaximoClient:
             dict: The Maximo response of the current location.
         """
         if not location_id:
-            logger.error("Location ID is required for syncing.")
+            self.logger.error("Location ID is required for syncing.")
             exit(1)
 
         location_name = locations[location_id].get('name').strip()
         prev_loc = next((loc for loc in synced if loc.get('location') == location_name), None)
         if prev_loc:
-            logger.info(f"Location '{location_id}' is already synced, skipping.")
+            self.logger.info(f"Location '{location_id}' is already synced, skipping.")
             return prev_loc
 
         if location_id not in locations:
-            logger.warning(f"Location ID {location_id} not found in Qonic locations.")
+            self.logger.warning(f"Location ID {location_id} not found in Qonic locations.")
             return None
 
         location = locations[location_id]
@@ -413,7 +434,8 @@ class MaximoClient:
         maximo_location = qonic_spatial_location_to_maximo_location(location, parent=parent, siteid=siteid, orgid=orgid,
                                                                     system_id=system_id)
         response = self.sync_location(maximo_location)
-        logger.info(f"Synced location '{response.get('location', 'UNKNOWN')}' for Qonic location '{location_id}' with parent '{parent}'.")
+        self.progress_tracker.add_location(response.get('location', 'UNKNOWN'), parent)
+        self.logger.info(f"Synced location '{response.get('location', 'UNKNOWN')}' for Qonic location '{location_id}' with parent '{parent}'.")
 
         synced.append(response)
         return response

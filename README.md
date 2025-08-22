@@ -13,8 +13,10 @@ Brussels Airport Company (BAC) environment.
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `AssetMapper.py`        | Maps Qonic asset data into Maximo-compliant format. Handles classstructure IDs, asset fields, and payload formatting.              |
 | `LocationMapper.py`     | Converts Qonic spatial location objects to Maximo location payloads. Also handles recursive parent syncing.                        |
+| `ProgressTracker.py`    | Tracks the created/deleted assets and locations during the sync process for cleanup and reporting purposes.                        |
 | `MaximoClient.py`       | Handles communication with the Maximo REST API, including session setup, object structure operations, error handling, and logging. |
 | `QonicClient.py`        | Connects to the Qonic backend to fetch assets and spatial locations. Supports filtering and pagination.                            |
+| `QonicMaximoSync.py`    | Main orchestrator that uses the above modules to perform the full sync operation from Qonic to Maximo.                             |
 | `bsdd/BssdMapping.json` | Mapping definitions for BAC-specific asset classes and fields between Qonic and Maximo.                                            |
 | `bsdd/BsddService.py`   | Service to fetch BAC-specific data from the BSSD system, used to map between Qonic and Maximo.                                     |
 
@@ -50,6 +52,7 @@ Brussels Airport Company (BAC) environment.
 
    Then, fill in the required values in the `.env` file:
     - `MAXIMO_API_KEY`: Your Maximo API key.
+    - `MAXIMO_API_URL`: The base URL for your Maximo instance.
 
 3. **Run a sync**
 
@@ -64,16 +67,18 @@ Brussels Airport Company (BAC) environment.
    ```
 
 # Diving Deeper
+
 ## What this script does exactly
 
 This script syncs selected Qonic products with Maximo in three steps:
 
 1. Location Sync
-   - For each product, it finds the spatial location and creates the full location hierarchy in Maximo (parents first).
+    - For each product, it finds the spatial location and creates the full location hierarchy in Maximo (parents first).
 2. Asset Creation
-   - Converts the product into a Maximo asset. Links it to the correct functional location in Maximo. This includes all the properties and
-     classifications as defined by the class structure defined in Maximo.
- 3. Qonic Update
+    - Converts the product into a Maximo asset. Links it to the correct functional location in Maximo. This includes all
+      the properties and
+      classifications as defined by the class structure defined in Maximo.
+3. Qonic Update
     - Pushes the newly created Maximo AssetId and FunctionalLocationId back to Qonic.
 
 ## Maximo Object Structures
